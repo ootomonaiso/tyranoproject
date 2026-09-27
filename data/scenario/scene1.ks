@@ -11,7 +11,8 @@
 @showmenubutton
 
 ;メッセージウィンドウの設定（見た目はdata/system/custom_skin.cssの.message_outerで指定）
-[position layer="message0" left=0 top=478 width=1280 height=230 page=fore visible=true]
+;メッセージ枠の下端(top+height=680)を最下段ボタン列(y=690)の手前で終わらせて重なりを回避
+[position layer="message0" left=0 top=450 width=1280 height=230 page=fore visible=true]
 [position layer=message0 page=fore margint="34" marginl="70" marginr="70" marginb="30"]
 @layopt layer=message0 visible=true
 

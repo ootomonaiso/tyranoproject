@@ -7,8 +7,9 @@
 
 :root {
     --tp-accent: #6aa9ff;
-    --tp-panel-bg: rgba(60, 60, 60, 0.55);
-    --tp-panel-border: rgba(120, 160, 220, 0.4);
+    /* テキストボックス：透過グレー（数値=RGB, 末尾0.0〜1.0が不透明度。小さいほど透ける） */
+    --tp-panel-bg: rgba(0, 0, 0, 0.95);
+    --tp-panel-border: rgba(0, 0, 0, 0.90);
 }
 
 /* メッセージウィンドウ（scene1.ksの message0 レイヤー） */
