@@ -2,17 +2,14 @@
 
 *day2_start
 [cm]
-[chara_hide_all time=300]
 ;演出案：朝の自室（未分類_16／二日目の朝）
 [bg storage="未分類_16.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 
 #
 障子越しのやわらかい光で目が覚めた。二日目ともなると、この知らない天井の木目にも少し見覚えが出てくる。慣れというのは我ながら現金なものだ。[p]
 枕元に手を伸ばす。……やっぱりスマホはない。二度寝したら令和に戻ってた、なんて都合のいいことも起きなかった。あるのは、たたんだ家紋入りの着物だけだ。[p]
 隣の部屋との襖は、今朝も拳ひとつぶん開いたままだった。昨日の「風通し」が、そのまま続いているらしい。[p]
 朱雀「……椿紗。起きてるか」[p]
-[tsubasa_r face="normal"]
 椿紗「起きてます。……兄さんが夜中に百回くらい寝返りを打っていたのも、知ってます」[p]
 朱雀「聞くな、そういうのは」[p]
 #
@@ -22,35 +19,26 @@
 ………[p]
 朝餉は、囲炉裏端に四人ぶんの膳が並んでいた。麦の多い飯に、菜っ葉の汁。それに――[p]
 朱雀「お、今日は干し柿がついてる」[p]
-[koyuki_c face="normal"]
 小雪「……はい。朝に甘いものがあると、体が動きますので」[p]
 #
 そう言いながら、三鷹さんは自分の膳の干し柿を、そっと椿紗のほうへ寄せていた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「え。いいんですか」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「わ、私は……その、いいので」[p]
 朱雀「三鷹さん、干し柿好きじゃなかった？」[p]
 小雪「……っ。す、好き、ですけど。今日は、椿紗様に」[p]
 #
 言い終わらないうちに、また汁をすする三鷹さんの耳が、少し赤い。[p]
 がらり、と勢いよく戸が開いて、真姫が飛び込んできた。腕にはあいかわらずタヌキ。[p]
-[maki_l face="surprised"]
 真姫「おはようございます！ みんな、もう食べてるんですか? ……あ、私のぶんの干し柿は?」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……真姫のぶんも、ちゃんと、あります」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「やった！ 小雪、好きです!」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……はい、はい」[p]
 #
 真姫が抱えたタヌキが、膳の菜っ葉をひょいと失敬した。[p]
 小雪「あっ。……タヌキは、お客さんでは、ないので」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「まあまあ、福を呼ぶ狸ってことにしておきましょう!」[p]
 朱雀「そんな上等なもんか、こいつ」[p]
 朱雀「……しかし、二日目にして、朝飯がうまく感じるな」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「昨日は、味がしない顔で食べてましたけどね」[p]
 朱雀「今日は、やることがあるからかな」[p]
 #
@@ -72,16 +60,12 @@
 朱雀「よし。……作るぞ」[p]
 #
 ;演出案：店先・手分けの相談（母屋_4／朝）
-[chara_hide_all time=300]
 [bg storage="母屋_4.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
-[tsubasa_r face="normal"]
 勢いよく立ち上がってはみたものの、店先に並んでいるのは竹の器がいくつかと井戸の水だけ。肝心の中身は、まだ何もない。[p]
 朱雀「……で、その材料が、そもそも無い、と」[p]
 椿紗「勢いだけは、いつも一人前ですね、兄さん」[p]
 朱雀「うるさい。今から集めるんだよ」[p]
 朱雀「よし、手分けだ。要るのは三つ。すっぱいみかん、甘味――つまり砂糖。それに、作る場所の支度だ」[p]
-[maki_l face="smile"]
 真姫「みかんも砂糖も、この真姫にお任せください！ 顔の広さと足の速さなら、堺じゅうで負けませんから！」[p]
 朱雀「その足で、また人を二人抱えて屋根を走るのは勘弁してくれよ」[p]
 真姫「あら。あれがいちばん速いのですけど」[p]
@@ -90,19 +74,14 @@
 朱雀「……いつか、あの人だかりを、こっちに引っぱってくるさ」[p]
 真姫「言いますねえ、旦那!」[p]
 朱雀「……で、今日はどれだけ作れそうだ?」[p]
-[koyuki_c face="think"]
 小雪「みかんと砂糖が、集まりしだいです。昨日の稼ぎを、そっくり元手にすれば……五十杯ぶんは、なんとか」[p]
 朱雀「五十杯。売り切れるかな」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「売り切りますよ! 気合いで!」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「気合いは、数に入りませんけどね」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……砂糖は唐物です。一斤で、目玉が飛びます。値切るなら、私が。雑な勘定だけは、させませんので」[p]
 [if exp="f.day1 == '小雪'"]
 朱雀「ちらっとこっち見て言うな。昨日の蔵のこと、まだ根に持ってるだろ」[p]
 [endif]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「私は家のほうを。井戸も台所も、洗って支度しておかないと作れませんから」[p]
 #
 それぞれが持ち場に、もう半分、腰を浮かせている。足元では、いつのまにか起きてきたタヌキが、ふわとあくびをして伸びをした。[p]
@@ -115,7 +94,6 @@
 
 *day2_tanuki
 [cm]
-[chara_hide_all time=300]
 朱雀「……いや、さすがに、それはなぁ」[p]
 @jump target="*day2_start_choice_return"
 
@@ -127,12 +105,9 @@
 *day2_koyuki
 [eval exp="f.day2 = '小雪'"]
 [cm]
-[chara_hide_all time=300]
 ;演出案：朝の堺の市場・大通り（魚市場_3）
 [bg storage="魚市場_3.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 朱雀「じゃあ、三鷹さんと、みかんの買い出しだな」[p]
-[koyuki_in face="normal"]
 小雪「はい。……昨日、旦那様が町でもらった、あのすっぱいみかん。あれをたくさん」[p]
 #
 帳面を小脇に、三鷹さんが先に立って歩き出す。その足取りに迷いがない。[p]
@@ -157,10 +132,7 @@
 ……[wait time=500][r]
 ………[p]
 ;演出案：表通り・ばあさまの露店（魚市場_1）
-[chara_hide_all time=300]
 [bg storage="魚市場_1.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
-[koyuki_in face="normal"]
 表通りに出ると、露天の前で子どもが小銭を握りしめて団子を指さしていた。店主が「まいどっ」と団子を焼く匂いが、たれの焦げる甘い煙になって流れてくる。腹の虫がわずかに騒いだが、今日の用はみかんだ。[p]
 すぐ隣では、魚屋の親父が「今朝獲れ、今朝獲れ」と声を張り上げて、主婦らしき女がひと睨みしてから値切りにかかっていた。「高いよ」「安くしとくよ」の応酬が背中越しに続く。三鷹さんはちらとも目をやらず、迷わず先へ進んだ。[p]
 例のばあさまの店先には、夏みかんが籠に山積みで、すっぱそうな顔をしていた。皮の照りが朝日を弾いて、近づくだけで鼻の奥がつんとする。[p]
@@ -173,10 +145,8 @@
 ばあさま「おや、ちゃっかりしてるねえ」[p]
 小雪「毎度こちらで銭になる。捨てるぶんも減ります。……悪いお話では、ないかと」[p]
 ばあさま「けどねえ、百も持ってかれちゃ、明日うちに並べるもんがない」[p]
-[chara_face name="koyuki" face="shy" storage="chara/koyuki/shy.png"]
 小雪「では、五十と五十で。……いえ、傷みの早いものを多めにいただければ、明日お困りになりません」[p]
 ばあさま「五十と、って、さっきと言ってること違うじゃないか」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「様子を見て、変えているだけです。……悪い変え方は、していません」[p]
 小雪「傷みの早いものから、こちらへ。日保ちするぶんは、店先に残して。……そうすれば、どちらも損をしません」[p]
 ばあさま「ふうん。若いのに、大したもんだ」[p]
@@ -208,10 +178,7 @@
 #
 坂に差しかかる手前で、荷車を引く男とすれ違う。狭い道を互いに端に寄って、三鷹さんは会釈だけで通り過ぎた。この町の作法を、体が覚えているみたいだった。[p]
 ;演出案：帰り道の井戸端（共同井戸_2）
-[chara_hide_all time=300]
 [bg storage="共同井戸_2.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
-[koyuki_in face="normal"]
 井戸端で、三鷹さんが籠を下ろして一息ついた。釣瓶の水を手のひらに受けて、額の汗をぬぐう。冷たい水滴が二、三滴、帳面の端に落ちて染みを作った。[p]
 小雪「……あ」[p]
 朱雀「気にすんな、そんくらい」[p]
@@ -243,24 +210,19 @@
 
 *day2_afternoon
 [cm]
-[chara_hide_all time=300]
 ;演出案：店の土間・みかんの試作（未分類_7／竈のある側）
 [bg storage="未分類_7.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 #
 そして待ちに待った昼。[p]
 店の土間には朝の戦利品がずらりと並んでいた。しなびた夏みかんの山、紙に包んだひとつまみの砂糖、水飴の壺に蜂蜜の小瓶。竈には火が入って、細い湯気が梁のあたりでゆらゆら揺れている。[p]
 みかんの山は、近づくとつんと酸っぱい匂いがした。かじる前から頬の裏がきゅっとなる。[p]
 朱雀「よし。……じゃあ、俺達で作るぞ！」[p]
 朱雀「小雪、さっきの籠、重かったろ。まだ肩、平気か」[p]
-[koyuki_c face="normal"]
 小雪「……平気です。半分は、旦那様が持ってくれたので」[p]
 #
 店をほったらかしにするわけにもいかないので、三鷹さんには表の店番をたのんでおく。[p]
-[tsubasa_r face="normal"]
 椿紗「……兄さん、袖。まくってからにしてください。べたべたになりますよ」[p]
 朱雀「お、おう」[p]
-[maki_l face="smile"]
 真姫「おりょうり、おりょうり！ 私、こういうのけっこう得意なんです!」[p]
 #
 と、真姫が夏みかんを両手でばんばん搾っていく。ぶしゅっ、ぶしゅっと勢いよく果汁が飛んで、竈の横の壁にまで点々と黄色いしぶきが散った。[p]
@@ -269,7 +231,6 @@
 #
 ぺろと手についた果汁をなめて、真姫が顔をしかめる。[p]
 一方、椿紗は真剣な顔でみかんに挑んでいた。両手で握った拳をひねった拍子に、実がつるんと抜けて土間の隅まで転がっていく。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……あ」[p]
 #
 拾い直して、今度は布でくるんで搾ってみる。加減がわからないのか、種も白い筋も苦い皮のかけらも、そのまま果汁に混ざって布の外へあふれた。[p]
@@ -278,9 +239,7 @@
 #
 真顔でこぼれた果汁を見つめる椿紗の手元は、握るたびにみかんが逃げていくせいで、いつまで経っても終わらない。[p]
 朱雀「……お前ら、こういうとこに性格が出るなあ」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「どういう意味ですか!」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「たぶん、良い意味ではないですね」[p]
 #
 足元では、あまりにもスピーディーに居ついた痩せた三毛が「にゃー」と鳴いて、転がったみかんをぽてと前足で叩いて遊んでいる。[p]
@@ -311,7 +270,6 @@
 #
 おそるおそる一口。すっぱい。じゃりじゃり。そのうえ、ぬるい。三重の裏切りがいっぺんに舌へ来た。[p]
 朱雀「……まっず」[p]
-[chara_face name="maki" face="laugh" storage="chara/maki/laugh.png"]
 真姫「あっはっは！ ご主人様、また変な顔ですよ!」[p]
 #
 けらけら笑う真姫の横で、俺は口の中の砂利みたいな甘さとしばらく格闘していた。[p]
@@ -324,11 +282,8 @@
 とろりと溶けた蜜をこした果汁に合わせて、井戸で冷やした水でそうっと割る。竹の器のなかで澄んだ黄色がくるりと揺れた。[p]
 できた試作一号を、店番の三鷹さんも呼んで、四人で一口ずつ回し飲みする。[p]
 朱雀「……お」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「あまいですね！ すっぱいけど、あまいです!」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……ちゃんと、飲み物になってますね」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……これなら。お客様に出せます」[p]
 #
 すっぱいだけだった夏みかんが、ひんやり甘い一杯になっていた。[p]
@@ -346,16 +301,12 @@
 #
 とん、と木札の角を直す三鷹さんの横顔が、ちょっとだけ得意げだった。[p]
 ;演出案：店先での初売り（母屋_4／昼・強い日差し）
-[chara_hide_all time=300]
 [bg storage="母屋_4.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
 表に縁台を出して竹の器を並べる。井戸で冷やした甘水を桶ごと日陰に据えた。[p]
 昼下がりの通りはじりじりと暑い。土ぼこりの立つ道を、荷を担いだ人足が手の甲で汗をぬぐいながら行き来している。[p]
-[maki_l face="smile"]
 真姫「場所ならお任せください！ この先の辻、荷運びがひっきりなしに通るんです。喉、からっからのはずですよ!」[p]
 #
 言うが早いか、真姫が通りへ声を張り上げる。椿紗もすうと息を吸って、妙に耳に残る節をつけた。[p]
-[tsubasa_r face="normal"]
 椿紗「『ひんやり、あまい、五文でひとつ〜』」[p]
 朱雀「……なんだ、それ」[p]
 椿紗「呼び入れ君です。耳に残るやつが強いんですよ」[p]
@@ -372,30 +323,23 @@
 ちゃりんと、竹筒に初めての五文が落ちる。[p]
 男は仲間まで連れて戻ってきた。「おい、ここの冷たいの、いけるぞ」の一言で、日焼けした男たちが五文玉を握って縁台の前に並ぶ。[p]
 搾り仕事とこし仕事で手の離せない俺たちに代わって、[p]
-[koyuki_c face="normal"]
 小雪「いらっしゃいませ。……ひんやり甘い一杯、いかがですか」[p]
 #
 表を任せた三鷹さんが、器を渡し銭を受け、立てた木札の裏に「正」の字を一画ずつ刻んでいく。[p]
 と、いいところで、桶の冷やし水が底をつきかけた。[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「あっ、水がもうないです! 井戸、井戸!」[p]
 朱雀「くみ立てはぬるいぞ。冷えるまで、客を待たせるのか?」[p]
-[chara_face name="tsubasa" face="surprised" storage="chara/tsubasa/surprised.png"]
 椿紗「あ、任せてください。えっと……桶を、こう……」[p]
 #
 縄を手に取った椿紗が、桶の口に結ぼうとして、あさっての方向に輪を作る。ほどけた縄の端が、ぱさりと土間に落ちた。[p]
 朱雀「……椿紗、それ、輪になってないぞ」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「そんなはずは……あ、ほんとですね」[p]
 #
 すっと横から手が伸びて、縄を取り上げる。[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……水面すれすれに吊るせば、じき冷えます。貸してください」[p]
 #
 小雪は迷いのない手つきで桶を結び、井戸の暗がりへそろそろと下ろしていく。しばらくして引き上げた水は、手を入れると、きん、と冷たかった。[p]
-[chara_face name="tsubasa" face="smile" storage="chara/tsubasa/smile.png"]
 椿紗「……さすが、小雪さん」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……いつものことです」[p]
 #
 客足が少し途切れた頃、団子屋の前でよく見る、鼻を光らせた小さな子が、五文玉をぎゅっと握って縁台の端からのぞいていた。[p]
@@ -412,39 +356,29 @@
 はじめはおっかなびっくりだった一杯が、昼下がりの堺でたしかに人の手から手へ渡っていった。[p]
 桶の甘水も、みかんの山も、きれいに底をついて、空はみかん色になっていた。[p]
 縁台に座り込んだ真姫が、足をぶらぶらさせながら、木札の裏の「正」の字を目で追う。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「五、十、十五……ねえ、これ、けっこう売れたんじゃないですか?」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……勘定は、あとでちゃんと。……でも、はい。売れました」[p]
 朱雀「……なあ。明日はどうする?」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「そりゃ、もっと作って、もっと売るんです！」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「その前に、明日のぶんのみかんと砂糖が要りますね」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……あと、今日の売り上げの勘定も」[p]
 #
 やることは山ほどある。[p]
 汗とみかんの匂いにまみれて、俺たちは竈の前にめいめいへたり込んだ。……悪くないくたびれ方だ。[p]
 
 [cm]
-[chara_hide_all time=300]
-;演出案：夕餉〜稼ぎ42文を数える・囲炉裏の間（囲炉裏_夜／夜）
-[bg storage="囲炉裏_夜.png" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
+;演出案：夕餉〜稼ぎ42文を数える・囲炉裏の間（未分類_16／夜）
+[bg storage="未分類_16.jpg" time=1000 method="crossfade"]
 #
 その晩の膳は、いつもより少しだけにぎやかだった。[p]
 麦飯に、菜っ葉の汁。それに、売れ残った夏みかんを一つ、四人で分けた。[p]
-[maki_l face="normal"]
 真姫「んっ、すっぱ! ……でも、これが甘くなるんですから、不思議ですよねえ」[p]
-[tsubasa_r face="normal"]
 椿紗「搾って、漉して、火を通して。手間の数だけ、化けるんです」[p]
 朱雀「うちの妹、職人みたいなこと言い出したな」[p]
 椿紗「兄さんが、何もしなくても化けると思ってるだけです」[p]
 #
 膳の隅には、例の熟鮓が小皿で控えていた。[p]
 朱雀「……こいつ、また出たか」[p]
-[koyuki_c face="normal"]
 小雪「精がつきますよ。ひと切れ、どうぞ」[p]
 #
 おそるおそる口に運ぶと、[quake time=300 hmax=8 vmax=4]鼻の奥をぶん殴るような酸味。だが麦飯にのせると、これが妙にいける。[p]
@@ -460,13 +394,10 @@
 #
 昨日までのぼんやり店番の稼ぎが、十数文。それが今日はその三倍か。[p]
 自分たちで考えて作って売ったもの。それが実際に、銭になった。[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「やったじゃないですか！ ご主人様、私たち、ちゃんと"商い"しましたよ！」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……あの夏みかん、あんなにすっぱかったのに」[p]
 [if exp="f.day2 == '小雪'"]
 朱雀「三鷹さんの見立てのおかげだよ。百は要るって、あれ」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……数えただけです。運んだのは、旦那様も」[p]
 [endif]
 #
@@ -474,7 +405,6 @@
 蓋を開けると、中はほとんど空っぽで、底のほうに今日の四十二文がころんと転がった。[p]
 広い箱に、小さな銭。ちゃりんという音がやけに寂しく響く。[p]
 朱雀「……でかい箱の、隅っこだな」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「これから、これから！ いつか、ここが銭でいっぱいになるんですから！」[p]
 #
 千両箱の縁に前足をかけて、タヌキが中をのぞき込む。四十二文しか入っていないのを見ると、ふい、と鼻を鳴らして丸くなった。[p]
@@ -491,7 +421,6 @@
 あれはボタン一つで出てきた。誰も、みかんを搾ってなんかいなかった。[p]
 四十二文の重みと、あの頃の百円。同じ「一杯ぶんの金」なのに。[p]
 朱雀「……なあ。ジュース一本が、こんなに遠いとはな」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さん」[p]
 朱雀「ん」[p]
 椿紗「でも、この四十二文は私たちが作ったものです。……あっちの百円には、たぶんこれが入っていません」[p]
@@ -499,39 +428,27 @@
 妹の言葉に、うまく返せなかった。[p]
 かわりに、千両箱の底の銭を一枚、指でつまんで、またそっと戻す。ちゃりん。[p]
 ふと見ると、三鷹さんが帳面の隅に、今日の四十二文を書きつけていた。その数字の下に、小さな字で、何か一行。のぞこうとしたら、さっと手で隠される。[p]
-[chara_face name="koyuki" face="shy" storage="chara/koyuki/shy.png"]
 小雪「……見ないでください。これは、その、私の」[p]
 朱雀「わかったわかった」[p]
 #
 何を書いたのかは、聞かないでおいた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「ねえ、四十二文もあるんですから、今夜くらい、なにかうまいもの食べませんか?」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「だめです。これは明日の、仕入れの元手ですので」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「けちですー!」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「けち、ではありません。……種銭です。これを食べてしまったら、明日、みかんが買えません」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「真姫さん。ここで使ったら、ただの"すっぱい水一杯ぶん"で終わりですよ」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「うぐ……正論」[p]
 朱雀「うまいものは、儲かってからだ。……な」[p]
 朱雀「……よし。明日は、五十文だ」[p]
 真姫「安いです！ 百文いきますよ、百文！」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……欲を言えば、まず仕入れの銭を別に取り分けてから……」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「小雪さん。そこは、夢を見る場面ですよ」[p]
 #
 くだらないやりとりに、囲炉裏端がまた笑いに包まれる。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「明日はですね、私、いい場所に目星をつけてあるんです。船着き場のそば。荷揚げの連中、汗だくで喉カラカラですよ」[p]
 朱雀「お、いいな。頼りにしてる」[p]
 真姫「ふふん、もっと褒めていいんですよ!」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……売り場が増えるなら、器も、もっと要りますね。竹を割っておかないと」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「私は、明日ぶんの薪を。……火がないと、蜜が作れませんから」[p]
 #
 それぞれが、もう明日の算段を始めている。昨日までは、明日のことを考える余裕もなかったのに。[p]
@@ -546,5 +463,4 @@
 千両箱の底で、今日の四十二文が、明日を待っていた。[p]
 
 [cm]
-[chara_hide_all time=300]
 @jump storage="day3.ks"

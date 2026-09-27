@@ -266,26 +266,6 @@
 
 	[configdelay speed="&tf.set_ch_speed"]
 
-;	テキスト表示速度のサンプルに使用するメッセージレイヤの設定
-	[position layer="message1" left="90" top="580" width="1100" height="100" margint="2" marginl="30" page="fore" visible="true" opacity="0"]
-	[layopt layer="message1" visible="true"]
-	[current layer="message1"]
-
-;	サンプルテキストを表示する
-	[emb exp="tf.text_sample"]
-
-		[iscript]
-		$(".current_span").css("color","#66564C"); // サンプルテキストのフォントカラーを指定
-		tf.system.backlog.pop(); // サンプルテキストを履歴から削除（nolog～endnologタグと同じです）
-		[endscript]
-
-;	待ち時間をテキスト速度とサンプルの文字数に対応（消えるのが早すぎるときは後ろの数字を好きなだけ増やそう）
-	[eval exp="tf.text_sample_speed = tf.set_ch_speed * tf.text_sample.length + 700"]
-	[wait time="&tf.text_sample_speed"]
-
-	[er]
-	[layopt layer="message1" visible="false"]
-
 [return]
 
 ;--------------------------------------------------------------------------------

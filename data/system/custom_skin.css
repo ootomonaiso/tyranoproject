@@ -7,7 +7,7 @@
 
 :root {
     --tp-accent: #6aa9ff;
-    --tp-panel-bg: linear-gradient(180deg, rgba(10, 14, 22, 0.78), rgba(10, 14, 22, 0.92));
+    --tp-panel-bg: rgba(60, 60, 60, 0.55);
     --tp-panel-border: rgba(120, 160, 220, 0.4);
 }
 

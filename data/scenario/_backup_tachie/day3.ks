@@ -2,32 +2,24 @@
 
 *day3_start
 [cm]
-[chara_hide_all time=300]
 ;演出案：店先での朝仕込み（母屋_4／朝）
 [bg storage="母屋_4.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 
 #
 三日目の朝は、もう慌てなかった。[p]
 起きて、顔を洗って、みかんを搾る。竈に火を入れ、砂糖を蜜にして、冷やす。昨日つまずいた段取りが、今日は指が勝手に動いた。[p]
 表の板戸を開けると、朝の空気はまだひんやりしていて、遠くで鶏が鳴いていた。[p]
-[maki_l face="smile"]
 真姫「はいはーい、みかん追加でーす! ばあさま、今日はおまけしてくれましたよ」[p]
-[koyuki_c face="normal"]
 小雪「……昨日より十個多い。ありがたいですね」[p]
-[tsubasa_r face="normal"]
 椿紗「井戸の水も、朝いちばんがいちばん冷たいです。汲んでおきました」[p]
 朱雀「……なんか、俺たち、板についてきたな」[p]
 #
 たった三日で、店が店らしく回り始めている。妙な気分だ。[p]
 搾ったみかんの匂いが、店じゅうに染みついてきた。指先はいつも少しべたついて、爪のあいだが、うっすら黄色い。……令和じゃ、一生かかない類の汚れだ。悪くない。[p]
 ;演出案：短い朝餉・囲炉裏の間（未分類_16／朝）
-[chara_hide_all time=300]
 [bg storage="未分類_16.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
 朝餉は相変わらず麦飯と汁。だが今朝は、三鷹さんが「精をつけないと、売り負けます」と、熟鮓を一切れずつ膳に足していた。[p]
 朱雀「……こいつ、朝から手強いな」[p]
-[koyuki_in face="normal"]
 小雪「一日、立ちっぱなしですので。好き嫌いは、なしで」[p]
 朱雀「……はい」[p]
 #
@@ -35,9 +27,7 @@
 ……[wait time=500][r]
 ………[p]
 ;演出案：繁盛する店先（母屋_4／昼・強い日差し）
-[chara_hide_all time=300]
 [bg storage="母屋_4.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
 表に縁台を出すと、もう待っている顔があった。[p]
 人足「よう、若旦那! 今日も冷たいの、あるかい」[p]
 朱雀「毎度どうも。……お、昨日の人か」[p]
@@ -56,7 +46,6 @@
 「あの店の冷たい甘水、うまいらしいぞ」[p]
 「へえ、金成屋がねえ。……ちょっと前まで、閑古鳥だったのに」[p]
 噂が噂を呼ぶ。売り声を張らなくても、人のほうから寄ってくる。[p]
-[maki_l face="laugh"]
 真姫「ふふん。私の見立てどおりでしょう? 人の通り道に店を出せば、勝手に広まるんですよ」[p]
 朱雀「はいはい、お前のおかげ、お前のおかげ」[p]
 真姫「もっと心を込めてください!」[p]
@@ -75,16 +64,12 @@
 男「……うるせえ」[p]
 #
 昼前には、朝仕入れたみかんが、早くも半分に減っていた。[p]
-[chara_face name="maki" face="surprised" storage="chara/maki/surprised.png"]
 真姫「うそでしょう、もうこんなに? ……私、ばあさまとこ、もうひとっ走りしてきます!」[p]
 朱雀「頼む。……屋根は使うなよ。みかんが潰れる!」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「わかってますってば!」[p]
 #
 たぶん、わかっていないんだろうなぁ……。[p]
-[tsubasa_r face="normal"]
 椿紗「……真姫さん、行きがけに、竹筒の替えも。数が心もとないので」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「はいはい、竹筒ですね!」[p]
 #
 言うが早いか、真姫はもう駆け出していた。[p]
@@ -111,7 +96,6 @@
 真姫「ふーん。……ま、いいですけど」[p]
 #
 そう言いながらも、真姫の目は、まだ酒場のほうを向いていた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……兄さん」[p]
 朱雀「ん?」[p]
 椿紗「今のって……兄さん、心当たりがあるんじゃないですか」[p]
@@ -128,9 +112,7 @@
 朱雀「……この調子だと、午後はもっと手が要るな」[p]
 #
 売り場を広げるか。評判を広げるか。呼び込みを増やすか。やれることは、いくつもある。[p]
-[koyuki_c face="think"]
 小雪「帳面を見るかぎり、今日は昨日の倍近く出ています。……このまま伸ばすなら、手は多いほうが」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「わたしも、賛成です」[p]
 朱雀「よし。午後は、それぞれ、店を大きくするほうに回ろう。……で、俺は、誰と組む?」[p]
 #
@@ -140,7 +122,6 @@
 
 *day3_tanuki
 [cm]
-[chara_hide_all time=300]
 朱雀「……いや、かき入れ時だぞ。今日はだめだ」[p]
 @jump target="*day3_choice_return"
 
@@ -152,12 +133,9 @@
 *day3_koyuki
 [eval exp="f.day3 = '小雪'"]
 [cm]
-[chara_hide_all time=300]
 ;演出案：終日ずっと店先での接客（母屋_4／昼〜夕）
 [bg storage="母屋_4.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
 朱雀「じゃあ、三鷹さんと俺で店先だな」[p]
-[koyuki_in face="normal"]
 小雪「はい。……いちばん忙しい持ち場です。覚悟してくださいね」[p]
 #
 言うだけあって、縁台の前はひっきりなしだった。器を渡し、銭を受け、また注ぐ。三鷹さんの手は、休む間がない。[p]
@@ -256,10 +234,8 @@
 #
 子供たちはぺこりと頭を下げて、また笑いながら駆けていく。[p]
 その足元を、のっそり歩いていたタヌキが、ぽてぽてと追いかけた。尻尾を振って、まるで自分も鬼ごっこに交ざっているみたいに。[p]
-[chara_face name="koyuki" face="smile" storage="chara/koyuki/smile.png"]
 小雪「……あの子、店番より、遊んでいる方が楽しそうです」[p]
 朱雀「お前もたまには走ってこいよ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「仕事中です」[p]
 #
 にべもなく言われて、俺は搾る手を速めた。[p]
@@ -311,15 +287,12 @@
 夜。この重さを、みんなに見せる番だ。[p]
 
 [cm]
-[chara_hide_all time=300]
-;演出案：慎ましい夕餉・囲炉裏の間（囲炉裏_夜／夜）
-[bg storage="囲炉裏_夜.png" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
+;演出案：慎ましい夕餉・囲炉裏の間（未分類_16／夜）
+[bg storage="未分類_16.jpg" time=1000 method="crossfade"]
 #
 その晩の膳は、いつにも増して慎ましかった。[p]
 麦飯は、いつもより少なめ。菜っ葉の汁と、香の物が少し。それだけだ。[p]
 朱雀「……なあ。今日、あんなに売れたのに。飯、増えないのか」[p]
-[koyuki_c face="think"]
 小雪「稼ぎは、明日の仕入れと、当分の蓄えに。……今食べてしまっては、意味がありません」[p]
 朱雀「わかってる。わかってるけど……」[p]
 #
@@ -328,36 +301,24 @@
 朱雀「今日は三鷹さんと、ずっと店先だったな。さすがに疲れたろ」[p]
 小雪「……いえ。稼いだ分だけ、疲れも軽いので」[p]
 [endif]
-[maki_l face="normal"]
 真姫「……ねえ。ちょっとくらい、いいと思いません?」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「だめです」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「まだ何も言ってません!」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「顔に書いてあります。『熟鮓、もう一切れ』って」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「うぐ」[p]
-[tsubasa_r face="normal"]
 椿紗「……小雪さん。読心の術ですか」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「帳面をつけていると、人の"欲しい顔"は、だいたいわかるようになるので」[p]
 朱雀「こわい特技だな……」[p]
 朱雀「……ほら、椿紗。俺の菜っ葉、やるよ」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「いりません。……兄さんこそ、育ち盛りでしょう」[p]
 朱雀「兄ちゃんは、我慢が得意なんだ」[p]
-[chara_face name="tsubasa" face="surprised" storage="chara/tsubasa/surprised.png"]
 椿紗「嘘ばっかり。さっきから、いちばん腹の音が大きいくせに」[p]
 #
 ばれていた。[p]
 膳の隅では、タヌキが菜っ葉の切れ端を物ほしそうに見上げていた。だが、その皿にも、余分は一つもない。[p]
 朱雀「しょうがない、か……」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「大丈夫です! 腹が減ってるほうが、明日、気合いが入るってものですよ!」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「その理屈だと、真姫さんは毎日、絶好調ですね」[p]
-[chara_face name="maki" face="surprised" storage="chara/maki/surprised.png"]
 真姫「どういう意味ですか!?」[p]
 #
 少し笑って、少しだけ、腹の減りがまぎれた。[p]
@@ -366,9 +327,7 @@
 ……[wait time=500][r]
 ………[p]
 ;演出案：自室・夜の食料探しの起点（主人公寝床／深夜トーン）
-[chara_hide_all time=300]
 [bg storage="主人公寝床.png" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
 夜半。どうにも寝つけなかった。腹が、減って。[p]
 天井を見ていても、浮かぶのは令和のコンビニの明るい棚ばかりだ。肉まん。からあげ。冷たい牛乳。……だめだ。何か腹に入れないと、眠れそうにない。[p]
 そっと布団を抜け出す。足元では、タヌキが「行くのか?」みたいな顔で、ついてきた。[p]
@@ -376,7 +335,6 @@
 #
 ;演出案：台所・真姫の待ち伏せオチ（未分類_7／深夜トーン）
 [bg storage="未分類_7.jpg" time=600 method="crossfade"]
-[ambient_light color="none" time=600]
 抜き足、差し足。暗い廊下を、台所へ――[p]
 真姫「どーこ行くんですか? ご主人様」[p]
 朱雀「うぉっ!?」[p]
@@ -391,11 +349,9 @@
 …[wait time=500][r]
 ……[wait time=500][r]
 ………[p]
-;演出案：蔵の戸前・小雪の待ち伏せオチ（蔵_夜／深夜トーン）
-[bg storage="蔵_夜.png" time=600 method="crossfade"]
-[ambient_light color="none" time=600]
+;演出案：蔵の前・小雪の待ち伏せオチ（薬屋_1／深夜トーン）
+[bg storage="薬屋_1.jpg" time=600 method="crossfade"]
 ならば、と方向を変える。蔵になら、干した何かがしまってあるはずだ。忍び足で、裏手へ――[p]
-[koyuki_in face="normal"]
 小雪「……旦那様。蔵に、何かご用ですか」[p]
 朱雀「ひっ」[p]
 #
@@ -420,17 +376,12 @@
 考えてみれば、鳴き声で正体がばれる囮ほど、頼りにならないものはない。作戦は、開始三秒で頓挫した。[p]
 ……こうなったら。妹なら、何か隠し持っているかもしれない。前に、蜂蜜漬けをこっそりやっていた前科もある。[p]
 ;演出案：椿紗の部屋の前＝自室の隣・三段オチの締め（主人公寝床／深夜・襖側）
-[chara_hide_all time=300]
 [bg storage="主人公寝床.png" time=600 method="crossfade"]
-[ambient_light color="none" time=600]
 そろり、と椿紗の部屋の襖に手をかける。拳ひとつ開いた、いつもの隙間へ――[p]
-[tsubasa_in face="normal"]
 椿紗「兄さん」[p]
 朱雀「!?」[p]
-[chara_face name="tsubasa" face="smile" storage="chara/tsubasa/smile.png"]
 椿紗「……いくらお腹がすいたからって。妹の布団に忍び込むのは、さすがに、節操がなさすぎませんか」[p]
 朱雀「ちが……そうじゃなくて、お前が何か、食い物を隠して」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さん……言い訳が、苦しいです」[p]
 #
 ぴしゃり、と襖が閉じられた。……ぐうの音も出ない。いや、腹の虫は、ぐうぐう鳴いているけど。[p]
@@ -449,5 +400,4 @@
 腹の虫と相談しているうちに、いつのまにか、眠っていた。[p]
 
 [cm]
-[chara_hide_all time=300]
 @jump storage="day4.ks"

@@ -2,10 +2,8 @@
 
 *epilogue_start
 [cm]
-[chara_hide_all time=300]
 ;演出案：店内土間・報せ待ちでそわそわ（未分類_7／朝）
 [bg storage="未分類_7.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 
 #
 朝から、金成屋はやけに落ち着かなかった。[p]
@@ -14,7 +12,6 @@
 朱雀「……落ち着かないな、こういうのは」[p]
 #
 誰に言うでもない呟きが、土間の空気に溶けて消えた。[p]
-[koyuki_l face="think"]
 小雪「……昨日の分の売上、もう三度数えました。合ってます」[p]
 朱雀「そりゃよかった」[p]
 小雪「……よくは、ないです」[p]
@@ -25,14 +22,11 @@
 小雪「……良すぎると、逆に落ち着きません」[p]
 #
 どこまでも几帳面な理屈に、朱雀はそれ以上突っ込むのをやめた。[p]
-[tsubasa_r face="normal"]
 椿紗「……小雪さん、それもう五回目の確認ですよ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……六回目です」[p]
 #
 律儀な訂正に、椿紗は何も言えなくなった。[p]
 竈の灰をならしていた朱雀の手も、いつもより忙しなく動いていた。意味もなく同じ場所を二度、三度とならしている。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さんも、そわそわしてますね」[p]
 朱雀「してない」[p]
 椿紗「今、同じところ、三回ならしてましたけど」[p]
@@ -40,11 +34,9 @@
 #
 言い張る声が、我ながら説得力に欠けていた。[p]
 朱雀「……そんなに気になるなら、四度目、数えるか」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……もう数えました。四度目も、合ってました」[p]
 #
 律儀に答えた声に、すでに数えていたことがばれていた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さん、味噌汁できました」[p]
 #
 差し出された椀を一口すすって、朱雀は真顔になる。[p]
@@ -52,17 +44,12 @@
 椿紗「え。……あ」[p]
 #
 気まずそうに目をそらす椿紗の椀を、三鷹さんがすっと引き取って味噌を足していく。危なげない手つきで味を調え、何事もなかったように椀を戻した。[p]
-[chara_face name="tsubasa" face="smile" storage="chara/tsubasa/smile.png"]
 椿紗「……ありがとうございます」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「いつものことです」[p]
 #
 椀を受け取った椿紗が、ひと口すすってほっとした顔をした。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……美味しいです、直してもらったの」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……最初から、ちゃんと作ればいいんです」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「返す言葉もないです」[p]
 #
 しゅんとした椿紗の肩を、朱雀が軽く叩いてやった。[p]
@@ -71,13 +58,11 @@
 表を眺めても、埃っぽい道に人影はなかった。軒先の風鈴が、風もないのにかすかに揺れて、小さく鳴った。[p]
 朱雀「……あいつ、まさか賭場で油売ってるんじゃないだろうな」[p]
 椿紗「真姫さんに限って、それはないと思いますけど」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……可能性は、ゼロではないかと」[p]
 #
 微妙に信用のない評価に、朱雀は苦笑いした。[p]
 そこへ、顔なじみの客が一人、暖簾をくぐってきた。[p]
 客「よう、今日の豆腐は」[p]
-[chara_face name="tsubasa" face="sad" storage="chara/tsubasa/sad.png"]
 椿紗「あ、すみません、少々お待ちを……」[p]
 #
 いつもより明らかに上ずった声で応対する椿紗に、客は怪訝そうな顔をした。[p]
@@ -86,7 +71,6 @@
 #
 「たぶん」を強調するように言った朱雀に、客はますます首をかしげていた。[p]
 結局その客は、いつも通り豆腐を買って帰っていった。会計を終えた椿紗が、深く息を吐く。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……日常って、ありがたいですね、こういうとき」[p]
 朱雀「同感だ」[p]
 #
@@ -100,11 +84,8 @@
 ………[p]
 
 ;演出案：昼の町・桶狭間の噂でざわめく雑踏（魚市場_1）
-[chara_hide_all time=300]
 [bg storage="魚市場_1.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 土煙を蹴立てて、真姫が走ってきた。裾も帯もはだけかけて、髪も乱れている。今までで一番、みっともない格好だった。草鞋の片方の紐が、ほどけかけたまま足に絡んでいた。[p]
-[maki_l face="normal"]
 真姫「はあっ、はあっ……お、織田の……!」[p]
 朱雀「落ち着け、息継いでから喋れ」[p]
 真姫「無理です! 今、言わないと、忘れそうで!」[p]
@@ -113,16 +94,13 @@
 真姫「織田の、勝ちです! 今川の大将首、獲ったって、みんな騒いでます!」[p]
 #
 一拍、土間が静かになった。竈の炭が、ぱちりと小さく爆ぜた音だけが妙に大きく響いた。[p]
-[tsubasa_r face="normal"]
 椿紗「……兄さん」[p]
-[koyuki_c face="normal"]
 小雪「……本当に、なったんですね」[p]
 朱雀「……ああ」[p]
 #
 短い言葉のあとで、誰からともなく、足が動いていた。[p]
 朱雀は框に置いていた草鞋を引っ掴み、三鷹さんは帳面を懐に押し込み、椿紗は火の始末もそこそこに土間を飛び出した。[p]
 真姫だけが、まだ息を整えきれないまま、よろよろと後を追いかけていた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「ま、待ってください、私が知らせに来たのに……!」[p]
 #
 …[wait time=500][r]
@@ -131,7 +109,6 @@
 行きは重かった道のりが、帰りはやけに軽かった。[p]
 真姫「はやくはやく! 元締め、逃げたりしないですよね!?」[p]
 朱雀「賭場の元締めが夜逃げしたら、それはそれで別の事件だろ」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さん、暢気ですね」[p]
 朱雀「暢気にでもならないと、緊張で吐きそうなんだよ」[p]
 #
@@ -143,15 +120,12 @@
 声の切れ端が、走り抜ける耳に断片的に飛び込んでくる。まるで町全体が、一つの大きな生き物みたいにざわめいていた。[p]
 三鷹さんは息一つ乱さず、涼しい顔で並走していた。[p]
 朱雀「……お前、なんでそんな平気なんだよ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……毎日、両替商まで走ってますので」[p]
 #
 存外に鍛えられた理由に、朱雀は言葉を失った。[p]
 息を切らして走る道すがら、擦れ違う人の顔がやけにゆっくり見えた。何人かが、噂話をする声で「織田」「今川」と口にしているのが耳に入る。[p]
 真姫の息はとうに上がりきっていたが、それでも足を緩めなかった。額から流れる汗が、顎先から滴り落ちて地面に小さな染みを作った。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……真姫さん、無理しないでください」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「無理してでも、これだけは、伝えたかったので」[p]
 #
 切れ切れの声にも、譲らない意思がにじんでいた。[p]
@@ -164,12 +138,10 @@
 避けきれず片足を突っ込んで、泥水がぱしゃりと跳ねた。構っている余裕は誰にもなかった。[p]
 曲がり角で、荷を積んだ大八車と鉢合わせしかけた。真姫が咄嗟に朱雀の腕を引いて、間一髪で避ける。[p]
 車引き「あ、危ねえ! 気をつけろい!」[p]
-[chara_face name="maki" face="serious" storage="chara/maki/serious.png"]
 真姫「す、すみません!」[p]
 #
 振り返って謝る余裕もなく、四人はそのまま走り続けた。[p]
 抜け道のつもりで入った路地は、思ったより狭く、荷を担いだ椿紗の肩が両側の壁にこすれた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……狭いです、これ」[p]
 朱雀「引っかかるくらいなら、荷、下ろすか」[p]
 椿紗「無理です、これ落としたら死活問題です」[p]
@@ -177,15 +149,11 @@
 苦労しながらも、椿紗は最後まで荷を抱え続けていた。[p]
 三鷹さんだけは、水たまりの縁を無駄なく飛び越えていた。走りながらでも、裾一つ汚していなかった。[p]
 朱雀「……お前、そんな余裕あるのか」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「余裕はないです。慣れてるだけです」[p]
 #
 
 ;演出案：酒場・賭場へ勝者として凱旋、銀の山（旅籠_1／前回より明るめ）
-[chara_hide_all time=300]
 [bg storage="旅籠_1.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
-[koyuki_r face="normal"]
 框をまたぐと、いつもの煙たさが出迎えた。今日ばかりは、それすら懐かしく感じられた。土間の奥、いつもの場所にいつもの顔があった。[p]
 元締め「……はいはい、噂はもう聞いてるよ」[p]
 #
@@ -205,10 +173,8 @@
 どこか対抗心を刺激されたのか、小雪の視線が心なしか鋭くなっていた。[p]
 男が卓の下から、木箱をいくつも運び出す。銀の粒がぎっしり詰まっていて、蓋を開けるたびに、じゃらりと重い音がした。灯りを受けて、鈍く光る粒がいくつも重なり合っていた。[p]
 銀特有の重い匂いが、土間にじんわりと広がっていた。指先で摘んだ一粒は、思いのほか冷たかった。[p]
-[maki_l face="normal"]
 真姫「……こ、これ、全部ですか」[p]
 元締め「約束だからね。五百倍だ。……数え直すかい?」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……数えます。念のため」[p]
 #
 帳場の奥から、賭場の他の客たちが何事かとこちらを覗き込んでいた。木箱に山と積まれた銀を見て、誰かが小さく口笛を吹く。[p]
@@ -226,7 +192,6 @@
 元締め「あんた、なんで織田に賭けようと思ったんだい。あの日、あそこにいた誰よりも、迷いがなかった」[p]
 #
 細めた目が、値踏みするようにこちらを見ていた。煙管の先から立つ煙が、ゆっくりと天井へ昇っていく。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「そ、それは……」[p]
 #
 言い淀む真姫の代わりに、朱雀は一歩前に出た。[p]
@@ -240,10 +205,8 @@
 
 *epilogue_kame
 [cm]
-[chara_hide_all time=300]
 朱雀「亀の甲羅を火であぶって、割れた筋を読んだんです。見事に『織田』の字に見えましてね」[p]
 元締め「……はぁ?」[p]
-[maki_in face="normal"]
 真姫「……あるじ様、それ絶対、後付けですよね」[p]
 朱雀「シッ」[p]
 元締め「……いや、待て。その甲羅、まだあるのかい」[p]
@@ -253,10 +216,8 @@
 
 *epilogue_tanuki_ongaeshi
 [cm]
-[chara_hide_all time=300]
 朱雀「うちで飼ってるタヌキが、夜中に木の実を『織田』の札のほうへ並べましてね。虫の知らせってやつです」[p]
 元締め「……そりゃ賭場じゃなくて、見世物小屋の話だ」[p]
-[tsubasa_in face="normal"]
 椿紗「……兄さん、久兵衛なら昨日は……」[p]
 朱雀「細かいことはいいんだよ」[p]
 元締め「その狸、今度うちにも貸してくれよ。看板にする」[p]
@@ -266,7 +227,6 @@
 
 *epilogue_kan
 [cm]
-[chara_hide_all time=300]
 朱雀「勘です」[p]
 元締め「……勘?」[p]
 朱雀「五百倍の勘です」[p]
@@ -279,7 +239,6 @@
 
 *epilogue_after_reason
 [cm]
-[chara_hide_all time=300]
 #
 周りで聞き耳を立てていた客たちからも、失笑やら感心やらの声が漏れていた。[p]
 客一「亀の甲羅って、正気か」[p]
@@ -303,9 +262,7 @@
 
 ;演出案：昼の帰り道・銀の木箱を担いでよろよろ（魚市場_1）
 [bg storage="魚市場_1.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 木箱を担いだ真姫が、へろへろになりながら音を上げた。[p]
-[maki_l face="normal"]
 真姫「おも……おもいです……」[p]
 朱雀「行きはあんなに元気だったのに」[p]
 真姫「行きは、空でしたから!」[p]
@@ -316,11 +273,9 @@
 朱雀「……結構です」[p]
 #
 食い下がろうとする商人を、三鷹さんが涼しい顔でぴしゃりと断った。[p]
-[koyuki_c face="normal"]
 小雪「……もう、行き先は決まっていますので」[p]
 #
 にべもない返事に、商人はすごすごと引き下がっていった。[p]
-[tsubasa_r face="normal"]
 椿紗「……見世物みたいですね、私たち」[p]
 朱雀「否定できないのが辛いな」[p]
 #
@@ -331,68 +286,51 @@
 #
 
 ;演出案：店内土間・安堵と労い〜里への出立話（未分類_7／夕方前の光、終盤は橙〜茜へ）
-[chara_hide_all time=300]
 [bg storage="未分類_7.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
-[tsubasa_r face="normal"]
 金成屋に戻り着くころには、四人とも肩で息をしていた。框に木箱を下ろすと、[quake time=350 hmax=7 vmax=6]どすんと重い音が土間に響いた。[p]
 座り込んだ椿紗が、框にもたれて大きく息をついた。[p]
 椿紗「……もう、当分、走りたくないです」[p]
-[maki_l face="normal"]
 真姫「私も、正直きつかったです」[p]
 #
 珍しく弱音を吐く二人を横目に、朱雀は水瓶から柄杓で水を汲んで回し飲みさせた。冷たい水が喉を通ると、ようやく人心地がついた心地がした。[p]
 框に座り込んだまま、しばらく誰も動かなかった。土間に差し込む夕方前の光が、埃っぽい空気を白く浮かび上がらせている。[p]
 真姫「……なんか、実感、湧かないですね。これだけの額」[p]
 朱雀「俺もだ。まだ夢見てる気分だよ」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「夢なら、覚めないでほしいです」[p]
 #
 乾いた笑いが土間に広がって、ようやく緊張がほどけていくのが分かった。[p]
 千両箱に新しい銀を詰め直しながら、三鷹さんの筆が休みなく動いていた。指先が銀の粒を弾くたびに、かちかちと小さな音が続く。[p]
-[koyuki_c face="normal"]
 小雪「……差し引き、ちょうど五百倍。一文の狂いもありません」[p]
-[chara_face name="maki" face="surprised" storage="chara/maki/surprised.png"]
 真姫「はやっ! もう数え終わったんですか!?」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「これくらい、朝飯前です」[p]
 朱雀「その台詞、二回目に聞いたな」[p]
 小雪「……一度目より、確信を持って言えますので」[p]
 #
 真姫が横から銀の粒を一つ手に取って、数を数える真似をしてみせた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「いーち、にー、さん……あれ、今どこまで数えました?」[p]
 朱雀「お前は数えなくていい」[p]
 真姫「地味に傷つきます、それ」[p]
 #
 そのやり取りをよそに、三鷹さんの筆はすでに最後の桁まで走り終えていた。[p]
 椿紗が茶を淹れ直しながら、ほっと息をついた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……これで、当分は安泰ですね」[p]
 朱雀「気を抜くなよ。稼いだ分、使うところも増えるんだから」[p]
 椿紗「兄さんがそれ言います?」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「あるじ様、意外としっかりしてますよね」[p]
 朱雀「意外は余計だ」[p]
 #
 軽口を叩き合いながらも、誰の顔にも安堵の色が滲んでいた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……このお金、何に使うんですか」[p]
 朱雀「まずは店の修繕だな。……あと、真姫と小雪の労い分」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「私は、別にいいですよ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……いただけるなら、頂戴します」[p]
 #
 即答した小雪に、真姫が横で目を丸くしていた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「小雪さん、そこは遠慮しないんですね」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……遠慮する理由が、ありませんので」[p]
 #
 祝杯代わりの茶を飲んでいると、戸口に人影が立った。[p]
 使いの者「……上野真姫どの、こちらに?」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「はい、私ですけど」[p]
 使いの者「頭より言伝です。此度の首尾、労いたいゆえ、一度里へ戻られよ、と」[p]
 真姫「……頭が、私を?」[p]
@@ -401,30 +339,22 @@
 朱雀「……行ってこいよ」[p]
 真姫「え、でも」[p]
 朱雀「稼がせてもらった側だしな。里まで、俺も付き合うよ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……でしたら、私も。旦那様お一人だと、道中でまた変な賭けを始めそうですし」[p]
 朱雀「始めねえよ、もう」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「賭け事は、もうこりごりです。次やるときは、絶対分の悪い賭けはしません」[p]
 朱雀「次があるのかよ、それ」[p]
 真姫「……ないことを祈ります」[p]
-[chara_face name="tsubasa" face="sad" storage="chara/tsubasa/sad.png"]
 椿紗「じゃあ、私も。……一人だけお留守番なんて、寂しいですから」[p]
 朱雀「お前らも来るのかよ」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……みんなで来てくれるんですか」[p]
 #
 声が、少しだけ弾んでいた。湯呑みを置いた手が、今度はぎゅっと膝の上で握られていた。[p]
 朱雀「……荷物、まとめとくか。今日はもう休んで、明日出立でいいか」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「賛成です。今日はもう、動きたくないです」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「はい……本当に、ありがとうございます」[p]
 #
 声を詰まらせかけた真姫の頭を、椿紗がそっと撫でた。子どもにするみたいな仕草に、真姫は目を丸くしていた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……真姫さんがされて嫌じゃないなら、今日はこれくらい、許してください」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……嫌じゃ、ないです」[p]
 #
 土間の隅では、タヌキが騒ぎなど知らぬ顔で丸くなって寝ていた。銀の詰まった千両箱の傍らで、その呑気な寝息だけが、いつも通りだった。[p]
@@ -437,5 +367,4 @@
 表の空はもう茜色に染まっていて、伊賀までの道のりを思うと、それだけで少し気が急いた。[p]
 
 [cm]
-[chara_hide_all time=300]
 @jump storage="epilogue2.ks"

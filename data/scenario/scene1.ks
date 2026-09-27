@@ -20,8 +20,8 @@
 [button name="role_button" role="quickload" graphic="button/qload.png" enterimg="button/qload2.png" x="140" y="690"]
 [button name="role_button" role="save" graphic="button/save.png" enterimg="button/save2.png" x="240" y="690"]
 [button name="role_button" role="load" graphic="button/load.png" enterimg="button/load2.png" x="340" y="690"]
-[button name="role_button" role="auto" graphic="button/auto.png" enterimg="button/auto2.png" x="440" y="690"]
-[button name="role_button" role="skip" graphic="button/skip.png" enterimg="button/skip2.png" x="540" y="690"]
+[button name="role_button" role="auto" graphic="button/auto.png" enterimg="button/auto2.png" autoimg="button/auto2.png" x="440" y="690"]
+[button name="role_button" role="skip" graphic="button/skip.png" enterimg="button/skip2.png" skipimg="button/skip2.png" x="540" y="690"]
 [button name="role_button" role="backlog" graphic="button/log.png" enterimg="button/log2.png" x="640" y="690"]
 [button name="role_button" role="fullscreen" graphic="button/screen.png" enterimg="button/screen2.png" x="740" y="690"]
 [button name="role_button" role="sleepgame" graphic="button/sleep.png" enterimg="button/sleep2.png" storage="config.ks" x="840" y="690"]
@@ -29,6 +29,15 @@
 [button name="role_button" role="title" graphic="button/title.png" enterimg="button/title2.png" x="1140" y="690"]
 
 ;テキスト速度・改行待ちグリフ等はデフォルトのまま
+
+;オート速度の永続値(sf._system_config_auto_speed)がNaN等で壊れている場合のみ既定へ戻す
+;（未設定ならConfig.tjsの既定が使われる／正しい数値=プレイヤー設定はそのまま尊重）
+[iscript]
+if (sf._system_config_auto_speed !== undefined && isNaN(parseInt(sf._system_config_auto_speed))) {
+	delete sf._system_config_auto_speed;
+	TG.config.autoSpeed = 5000; // Config.tjsのautoSpeedと合わせる
+}
+[endscript]
 
 ;――変数初期化――
 [eval exp="f.day1 = ''"]

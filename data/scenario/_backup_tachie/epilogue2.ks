@@ -2,10 +2,8 @@
 
 *epilogue2_start
 [cm]
-[chara_hide_all time=300]
 ;演出案：店先・朝、伊賀への出立支度（母屋_4／晴天）
 [bg storage="母屋_4.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 
 #
 出立の朝は、抜けるような晴天だった。[p]
@@ -14,12 +12,10 @@
 婆さま「留守は任せときな。……ま、正の字くらいは書けるからね」[p]
 朱雀「よろしくお願いします、婆さま」[p]
 婆さま「みかん、酸っぱいのしか置いてないけど。腹が減ったらそれでも囓っときな」[p]
-[maki_l face="smile"]
 真姫「あ、それ、私もらっていきます!」[p]
 #
 婆さまの差し出した籠から、真姫が二つ三つ、遠慮なく懐へねじ込んだ。[p]
 竈の前では、椿紗が握り飯を手早く俵形にまとめていた。まだ温かい飯粒が、指先にぺたぺたとくっついている。[p]
-[tsubasa_r face="normal"]
 椿紗「兄さん、味見してみます?」[p]
 #
 一つつまんで口に運んだ朱雀は、しっかり握られた飯の硬さに感心した。[p]
@@ -29,12 +25,10 @@
 むっとした顔で言い返しながらも、椿紗は残りの握り飯を丁寧に竹皮へ並べていった。[p]
 三鷹さんは土間の隅に積んだ荷を、もう一度端から数え直していた。[p]
 朱雀「……何度も数えなくても、減りはしないだろ」[p]
-[koyuki_c face="think"]
 小雪「……減らないことを、確認するのが数えるということです」[p]
 #
 返す言葉が見つからず、朱雀は黙って自分の荷を担ぎ直した。[p]
 椿紗が水筒の紐を結びながら、荷の中身をひとつずつ指差して数えていく。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「油紙、火打石、干し飯、手拭い……あと」[p]
 朱雀「あと何かあったか」[p]
 椿紗「兄さんの分の着替え。汗、絶対かきますから」[p]
@@ -43,24 +37,19 @@
 #
 草鞋の紐を締め直しながら、朱雀はふと足元を見下ろした。[p]
 朱雀「……革靴のほうが、まだ歩きやすかった気がするな」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「くつ、とは?」[p]
 朱雀「いや、こっちの話」[p]
 #
 足の甲に食い込む紐の感触は、何度結び直してもしっくりこなかった。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さん、それ、緩いですよ」[p]
 #
 横からしゃがみ込んで、椿紗が紐を結び直す。ぎゅっと締まった感触に、朱雀は思わず声を上げた。[p]
 朱雀「……つ、痛っ、きつすぎる」[p]
 椿紗「歩いてるうちに緩みますから、これくらいでいいんです」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「さ、出発です! 伊賀まで、ちんたら歩いてたら日が暮れちゃいます!」[p]
 #
 先頭に立った真姫の足取りは、朝から妙に軽かった。風呂敷包みを背負う後ろ姿が、心なしかいつもより弾んで見える。[p]
-[chara_face name="tsubasa" face="smile" storage="chara/tsubasa/smile.png"]
 椿紗「真姫さん、今日はやけに機嫌いいですね」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「里に帰るんですから、当然です!」[p]
 #
 胸を張って歩く真姫の草鞋が、土の上で軽い音を立てていた。[p]
@@ -78,9 +67,7 @@
 #
 軽く頭を下げて、豆腐売りは車輪をきいきい鳴らしながら通り過ぎていった。[p]
 ;演出案：町の木戸・番人の関所（木戸_1）
-[chara_hide_all time=300]
 [bg storage="木戸_1.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
 町の木戸を抜けるとき、番人の男が欠伸交じりに帳面へ何か書き付けていた。[p]
 番人「……金成屋の。何人だ」[p]
 朱雀「四人です」[p]
@@ -89,30 +76,23 @@
 筆先が紙をこする音だけを残して、木戸番は再びうとうとし始めていた。[p]
 
 ;演出案：田畑の間の道・青い苗、のどかな街道（田園_1）
-[chara_hide_all time=300]
 [bg storage="田園_1.jpg" time=1200 method="crossfade"]
-[ambient_light color="none" time=600]
-[maki_l face="normal"]
 木戸を抜けてしばらくは、田畑の間を縫う道が続いた。稲穂にはまだ早いが、青々とした苗が等間隔に並んで風にそよいでいる。[p]
 畦道で作業していた百姓の一人が、笠の下から会釈してよこした。[p]
 百姓「精が出るね、旅の人」[p]
 朱雀「そちらこそ」[p]
 真姫「あ、あそこの家、蜂蜜売ってるとこです! 昔よく買いました」[p]
-[tsubasa_r face="normal"]
 椿紗「真姫さん、伊賀まで結構顔広いですね」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「これでも、あちこち回ってましたから」[p]
 #
 道端の井戸で水を汲んでいた女たちが、めずらしそうにこちらへ視線を送ってくる。会釈を返すと、くすくす笑いが返ってきた。[p]
 畑の外れで、放し飼いの鶏が数羽、道を我が物顔で横切っていった。[p]
 朱雀「……こういうのどかさ、嫌いじゃないな」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さん、鶏に轢かれかけましたよ、今」[p]
 朱雀「轢かれてない、避けた」[p]
 #
 畑を抜けたところで、荷車を引く老人が難儀しているのに出くわした。車輪が轍に嵌って動かなくなっている。[p]
 朱雀「……手伝いますか」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「もちろんです!」[p]
 #
 四人がかりで荷車を押すと、思いのほかあっさり轍から抜け出した。[p]
@@ -121,54 +101,43 @@
 #
 老人は何度も頭を下げながら、荷車を引いて去っていった。その後ろ姿を見送って、真姫が満足そうに頷いていた。[p]
 真姫「いいことすると、なんか元気出ますね」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「真姫さん、単純ですね」[p]
 #
 …[wait time=500][r]
 ……[wait time=500][r]
 ………[p]
 ;演出案：山道・木の根の細道、木漏れ日（峠_1）
-[chara_hide_all time=300]
 [bg storage="峠_1.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 街道を外れて山道に入ると、道はぐっと細くなった。木の根が路面を這い、踏むたびに乾いた土埃が舞う。[p]
 朱雀「……これ、道であってるんだよな」[p]
-[maki_l face="smile"]
 真姫「あってますあってます! たぶん!」[p]
 朱雀「たぶんて」[p]
-[tsubasa_r face="normal"]
 椿紗「兄さん、修学旅行の山道、思い出しません? バスガイドさんが言ってた『あと十分』が永遠に来ないやつ」[p]
 朱雀「言うな。地味にきついこと思い出した」[p]
 #
 木漏れ日が足元でちらちらと揺れて、踏むたびに影の形が変わる。蝉にはまだ早いのか、代わりに名も知らない鳥の声が、遠くでひっきりなしに鳴いていた。[p]
 三鷹さんは黙って懐から手拭いを出すと、額の汗を拭った。差し出された手拭いを、椿紗が当然のように受け取って自分の汗も拭く。三鷹さんは特に何も言わず、次に朱雀の分もそっと差し出した。[p]
 朱雀「……悪いな、毎回」[p]
-[koyuki_c face="normal"]
 小雪「洗えば、また使えますので」[p]
 #
 道が急に傾斜を増して、両手を使わないと登れない斜面に差し掛かった。[p]
 朱雀「……ここ、道じゃなくて壁だろ」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「気合です!」[p]
 #
 真姫が軽々と登っていく後ろで、椿紗が土を掻いた手を滑らせ、朱雀の背中にしがみついた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……ちょっと、手、貸してください」[p]
 朱雀「お前が先に登ろうとしたんだろ」[p]
 #
 それでも押し上げるように支えてやると、椿紗は無言のまま登り切り、頂で振り返って澄ました顔をしていた。[p]
 小雪だけは、荷を背負ったまま危なげなく登り、最後に手を差し出して朱雀を引き上げた。[p]
 朱雀「……お前、そんな力あったのか」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「帳場の千両箱、毎日運んでますので」[p]
 #
 斜面を登り切ったところで、真姫が額の汗を袖で拭いながら振り返った。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「あるじ様、そこの木の根、踏むと滑るので気をつけてくださいね」[p]
 #
 言われた直後、朱雀はその根に足を取られて盛大にバランスを崩した。[p]
 朱雀「……お、おわっ」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「言われた直後に躓く人、初めて見ました」[p]
 朱雀「フラグって怖いな」[p]
 椿紗「ふらぐ?」[p]
@@ -176,7 +145,6 @@
 #
 細い沢に出くわして、飛び石を伝って渡る。真姫は一足飛びに跳んで難なく渡り、椿紗はおっかなびっくり一歩ずつ、朱雀は真ん中の石で水しぶきを跳ね上げて片足を濡らした。[p]
 朱雀「……つっ、冷たっ」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「もー、危ないですよ、あるじ様」[p]
 #
 濡れた足袋が、歩くたびにぐしゅりと湿った音を立てた。乾くまで、その感触と付き合う羽目になった。[p]
@@ -184,20 +152,15 @@
 真姫「あ、これ食べられるやつです。……ん、甘い!」[p]
 #
 指先を赤く染めながら、真姫は皆の分もひとつかみ摘んで配った。口に入れると、甘酸っぱさがじわりと広がる。種のじゃりっとした粒が、舌の上でいつまでも残った。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……真姫さん、こういうとこだけは頼りになりますね」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「だけ、は余計です!」[p]
 #
 小雪は摘んだいちごを一つ、口に運ぶ前にしばらく手のひらで転がしていた。[p]
 朱雀「……食わないのか」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……食べます」[p]
 #
 一拍おいて、三鷹さんは小さく口に含んだ。酸っぱかったのか、眉間がわずかに寄っていた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……小雪さん、その顔、珍しいですね」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……そう、ですか」[p]
 #
 指先の赤い染みを、しばらく見下ろしていた。[p]
@@ -206,11 +169,9 @@
 ………[p]
 昼を過ぎたころ、空が急に翳って、ぽつりと頬に冷たいものが当たった。[p]
 朱雀「……嘘だろ、雨か」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「あそこ、木の下、行きましょう!」[p]
 #
 慌てて駆け込んだ大木の下は、葉が重なり合っていて雨がほとんど落ちてこなかった。それでも風向きが変わるたび、大粒の雫が首筋に落ちてくる。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……冷たっ」[p]
 #
 首をすくめた椿紗の肩に、朱雀は自分の荷から手拭いを一枚かけてやった。[p]
@@ -218,23 +179,17 @@
 椿紗「……少しだけ」[p]
 #
 雨脚は思ったより早く弱まり、木の葉から滴る水音だけを残して、空は再び薄日を透かし始めた。[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「よかった、本降りにならなくて」[p]
 朱雀「これで本降りだったら、俺たち今頃泣いてたぞ」[p]
 #
 土の匂いが、雨上がりの空気にいっそう濃く混じっていた。踏み出した草履の裏に、湿った土がべたりと張りつく。[p]
 ;演出案：谷にかかる丸太の橋・高所（渡し場_1）
-[chara_hide_all time=300]
 [bg storage="渡し場_1.jpg" time=900 method="crossfade"]
-[ambient_light color="none" time=600]
-[maki_l face="normal"]
 少し進むと、谷を渡る丸太の橋に差し掛かった。太い丸太を二本並べただけの、頼りない造りだった。[p]
 朱雀「……これ、渡るのか」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「大丈夫です、私が先に渡りますから」[p]
 #
 軽い足取りで渡りきった真姫が、振り返って手招きする。椿紗はその場に立ち尽くしたまま動かなかった。[p]
-[tsubasa_r face="normal"]
 椿紗「……高いところ、苦手です」[p]
 朱雀「見なきゃいい。足元だけ見て歩け」[p]
 #
@@ -243,7 +198,6 @@
 朱雀「あと半分、頑張れ」[p]
 #
 渡り切った椿紗が、地面に足をつけた途端へなへなと座り込んだ。三鷹さんは終始危なげなく、最後に荷物ごと軽々と渡ってきた。[p]
-[koyuki_c face="normal"]
 小雪「……揺れが少ない場所を選べば、平気です」[p]
 朱雀「その余裕、今は妬ましいわ」[p]
 #
@@ -251,72 +205,56 @@
 ……[wait time=500][r]
 ………[p]
 ;演出案：開けた尾根道・里を見渡す眺望（峠_2）
-[chara_hide_all time=300]
 [bg storage="峠_2.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
 昼を過ぎたころ、開けた尾根道に出た。眼下に広がる里の田畑が、風に揺れて緑と金色に波打っている。[p]
 朱雀「……こういう景色、教科書の写真でしか見たことなかったな」[p]
-[tsubasa_r face="normal"]
 椿紗「今、まさにその中にいるんですけどね」[p]
 朱雀「わかってるよ。わかってるけど、実感が追いつかないんだよ」[p]
 #
 吹き上げてくる風が汗ばんだ首筋を撫でて、思いのほか気持ちがよかった。遠くの田で、笠をかぶった人影が数人、腰を折って何か作業をしているのが見えた。[p]
 尾根道を少し進むと、槍を担いだ武者が数人、列をなして通り過ぎていった。土埃を巻き上げる足並みは揃っていて、誰も彼もが前だけを見ていた。[p]
 朱雀「……あれ、どこかの軍勢か?」[p]
-[maki_l face="normal"]
 真姫「さあ。……この辺りは、いろんな家の領地が入り組んでますから」[p]
 #
 先頭の武者が一瞬こちらへ目をやったが、それだけで通り過ぎていった。土煙が収まるまで、誰も口を開かなかった。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……なんか、緊張しました、今」[p]
 朱雀「同感だ」[p]
 #
 少し開けた岩場に腰を下ろして、握り飯を分ける。竹皮を開くと、ほのかに笹の匂いが立った。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「これ、婆さまの?」[p]
 朱雀「らしいな。……普通に美味い」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さんが作るより美味しいですね」[p]
 朱雀「お前が作るよりも、な」[p]
 椿紗「今、それ言う必要ありました?」[p]
 #
 道端に立つ茶屋とも呼べない小さな床几に、老爺が一人腰かけていた。傍らの籠には、串団子がいくつか並んでいる。[p]
 老爺「兄さんがた、団子はどうだい。安くしとくよ」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「あ、食べたいです!」[p]
 朱雀「……荷物、これ以上増やすなよ」[p]
 真姫「増やしません、その場で食べるので!」[p]
 #
 四人分の串を受け取ると、甘辛い醤油だれの匂いが鼻先に漂った。ひとくち齧ると、香ばしさが口いっぱいに広がる。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……美味しいです、これ」[p]
 老爺「だろう。婆さんの手作りでね」[p]
 #
 茶屋を離れてしばらく、真姫が道端の草むらを指差した。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「これ、あく抜きすれば食べられる山菜です。……あ、これは駄目なやつ」[p]
 朱雀「見分けつくのか、そんなの」[p]
 真姫「これでも山育ちですから」[p]
 #
 椿紗が興味津々で覗き込んだ拍子に、葉先で指を切って小さな悲鳴を上げた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……いたっ」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「あ、それ、縁がギザギザしてるので気をつけてください」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「先に言ってください!」[p]
 #
 しばらく歩くと、崖の途中から水が細く流れ落ちている小さな滝に出た。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「ここの水、飲めますよ。冷たくて美味しいんです」[p]
 #
 竹筒に水を受けると、驚くほど冷たい水が喉を鳴らして流れ込んできた。[p]
 朱雀「……うまい」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「生き返ります」[p]
 #
 三鷹さんも一口含んで、目を細めていた。[p]
-[koyuki_c face="normal"]
 小雪「……金成屋の井戸水より、冷たいです」[p]
 朱雀「そりゃ、水源が違うからな」[p]
 #
@@ -327,30 +265,24 @@
 行商人「なあに、若いんだ。すぐですよ」[p]
 #
 そう言い残して、行商人はまた笠を下げて歩いていった。すぐ、という言葉の軽さが、少し恨めしかった。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「あの人、荷、重そうでしたね」[p]
 朱雀「お前の荷物のほうが軽そうに見えるけどな」[p]
 真姫「これでも結構入ってるんですよ!」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……足、大丈夫ですか」[p]
 朱雀「まだいける。……お前こそ、無理してないか」[p]
 小雪「私は、いつも歩いてますので」[p]
 #
 つん、とそっぽを向いた横顔に、汗の粒が一つ光っていた。[p]
 岩に腰掛けたまま、椿紗が竹皮の包みをまとめて紐で縛り直した。[p]
-[chara_face name="tsubasa" face="smile" storage="chara/tsubasa/smile.png"]
 椿紗「……お弁当箱、これはこれで味があっていいですね」[p]
 朱雀「プラスチックの弁当箱が恋しくなる日が来るとはな」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「贅沢言わないでください」[p]
-[chara_face name="maki" face="surprised" storage="chara/maki/surprised.png"]
 真姫「べんとうばこ、とは?」[p]
 朱雀「……こっちの話」[p]
 #
 きょとんとした真姫の顔に、椿紗が小さく笑いをこらえていた。[p]
 腰を上げる前に、朱雀は自分の足の裏をそっと確かめた。かかとのあたりが、じんわり熱を持ち始めている。[p]
 朱雀「……マメ、できかけてるな、これ」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「見せてください」[p]
 #
 言うが早いか、椿紗は無理やり朱雀の草鞋を脱がせにかかった。[p]
@@ -362,23 +294,18 @@
 椿紗「……これくらいは、できます」[p]
 #
 ;演出案：道端の地蔵と小さな祠・旅の無事を祈る（地蔵堂_1）
-[chara_hide_all time=300]
 [bg storage="地蔵堂_1.jpg" time=900 method="crossfade"]
-[ambient_light color="none" time=600]
 尾根を下る途中、道端の地蔵に手を合わせる老婆とすれ違った。真姫が足を止めて、深々と一礼していく。[p]
 朱雀「……知り合いか?」[p]
-[maki_l face="normal"]
 真姫「いえ。でも、道中の無事を祈るのは礼儀ですから」[p]
 #
 その律儀さに、朱雀は少しだけ感心して黙った。[p]
 老婆「おや、旅の方かい。気をつけてお行きなさいよ」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「はい! ありがとうございます!」[p]
 #
 声をかけられた真姫が、深く頭を下げる。老婆は皺だらけの顔で笑って、また地蔵の前に手を合わせ直した。[p]
 地蔵の脇には、小さな祠と賽銭箱らしい木箱が置かれていた。三鷹さんが足を止めて、懐から一文だけ取り出して箱に落とす。[p]
 朱雀「……お前も、お参りするのか」[p]
-[koyuki_r face="normal"]
 小雪「……道中安全、と書いてありましたので」[p]
 朱雀「律儀だな」[p]
 小雪「これくらいの元手で安心が買えるなら、安いものです」[p]
@@ -388,25 +315,19 @@
 ……[wait time=500][r]
 ………[p]
 
-[chara_hide_all time=300]
-[bg storage="峠_1.jpg" time=1500 method="crossfade"]
-[ambient_light color="rgb(70,85,130)" time=600]
+[bg storage="yamayoru.png" time=1500 method="crossfade"]
 日が傾き始めた頃、真姫が急に足を止めた。[p]
-[maki_l face="normal"]
 真姫「あ、ここ、いい野営場所です! 水も近いですし」[p]
 朱雀「よく分かるな、そういうの」[p]
 真姫「これでも、外で寝るのは慣れてますので」[p]
 #
 胸を張った拍子に、真姫は道端の石に躓いて、盛大に転んだ。[p]
 真姫「……いてて」[p]
-[tsubasa_r face="normal"]
 椿紗「慣れてる、の説得力が今ので だいぶ減りましたね」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「うるさいです! 誰でも躓く石はあります!」[p]
 #
 土を払いながら立ち上がる真姫を、小雪が黙って手を貸して引き起こした。[p]
 近くの沢で水を汲みながら、椿紗が水面を覗き込んだ。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……魚、いますね」[p]
 朱雀「捕まえられそうか?」[p]
 椿紗「無理です。手が滑って余計逃げます」[p]
@@ -417,41 +338,32 @@
 #
 水を汲んだ竹筒を担いで戻る道すがら、真姫が地面にしゃがみ込んで何かを見つめていた。[p]
 朱雀「どうした」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……足跡です。獣の」[p]
 #
 覗き込むと、確かに湿った土に、丸みを帯びた足跡がいくつも残っている。[p]
 真姫「大きさからして、猪だと思います。もう通り過ぎてますけど」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……それ、早く言ってほしかったです」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「今、言いました!」[p]
 #
 薪になりそうな枯れ枝を、みんなで手分けして拾い集める。夕暮れの匂いに混じって、乾いた木の匂いがふわりと立った。[p]
 落ち葉を踏むたびに、かさかさと乾いた音が響く。集めた枝を束ねる縄は、真姫の荷からいくらでも出てきた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「真姫さん、縄、何本持ってきてるんですか」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「多いに越したことはないので!」[p]
 #
 拾い終えた枝の束を担ぐと、想像より重くて、朱雀は思わずよろけた。[p]
 朱雀「……地味に重いなこれ」[p]
-[koyuki_c face="normal"]
 小雪「私が半分持ちます」[p]
 #
 言うが早いか、小雪は朱雀の束から迷いなく半分を引き取っていた。[p]
 朱雀「……なんか、キャンプみたいだな」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「きゃんぷ?」[p]
 朱雀「こっちの話」[p]
 #
 拾った枝の束を、三鷹さんが太さごとに黙々と選り分けていく。細い枝を下に、太い枝を上に。無駄のない手つきだった。[p]
 朱雀「……お前、火の起こし方まで詳しいのか」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「帳簿と、薪の並べ方は、似てますので」[p]
 #
 組んだ枝の山に、真姫が慣れた手つきで火打石を打ちつける。かちん、かちんと硬い音が続いたあと、小さな火花が枯れ葉に落ちて、細い煙が立ち上った。[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「……よし、火、つきました!」[p]
 #
 橙色の灯りが、四人の顔をゆらゆらと照らし出す。パチ、と一つ爆ぜた音に、椿紗が肩をすくめた。[p]
@@ -460,20 +372,15 @@
 真姫「里が近いので、元気出ちゃうんです!」[p]
 #
 椿紗が焚き火に手をかざしながら、ぽつりとつぶやいた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……明日には、伊賀に着くんですよね」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「はい。……頭にも、みんなにも会わせたいです」[p]
 #
 めずらしく声を弾ませた真姫の横顔を、三鷹さんがちらりと見やった。[p]
-[chara_face name="koyuki" face="smile" storage="chara/koyuki/smile.png"]
 小雪「……楽しみに、してるんですね」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「そりゃ、地元ですから!」[p]
 #
 遠くの林で、鳥がねぐらへ帰る声が一度だけ響いて、それきり静かになる。[p]
 表の空はもう群青に染まりきっていて、一番星が一つ、木々の隙間に瞬いていた。[p]
 
 [cm]
-[chara_hide_all time=300]
 @jump storage="epilogue3.ks"

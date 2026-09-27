@@ -33,7 +33,7 @@
     var html = "";
     html += "<div style='font-size:38px;color:#ffffff;font-weight:bold;margin-bottom:4px;'>実 績</div>";
     html += "<div style='font-size:22px;color:#ffe08a;margin-bottom:18px;'>解除 " + tf.ach_got + " / " + tf.ach_total + "</div>";
-    html += "<div style='max-height:540px;overflow-y:auto;padding-right:8px;'>";
+    html += "<div id='ach_scroll' style='max-height:540px;overflow-y:auto;overflow-x:hidden;padding-right:8px;pointer-events:auto;-webkit-overflow-scrolling:touch;'>";
 
     for(var i=0;i<tf.ach_defs.length;i++){
         var d    = tf.ach_defs[i];
@@ -61,6 +61,23 @@
 ;一覧本体（overwrite=true なので再入場しても重複しない）
 [ptext layer=1 page=fore name="ach_board" overwrite="true" x=60 y=40 width=1000 text=&tf.ach_html]
 
+;スクロール有効化：windowのcaptureフェーズでホイールを先取りし、
+;カーソルが一覧領域内なら自前でスクロール（上に重なるレイヤやバックログ横取りを無視できる）
+[iscript]
+if (window._ach_wheel) { window.removeEventListener('wheel', window._ach_wheel, true); }
+window._ach_wheel = function(e){
+    var box = document.getElementById('ach_scroll');
+    if(!box){ return; }
+    var r = box.getBoundingClientRect();
+    if(e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom){
+        box.scrollTop += e.deltaY;
+        e.preventDefault();
+        e.stopPropagation();
+    }
+};
+window.addEventListener('wheel', window._ach_wheel, { capture:true, passive:false });
+[endscript]
+
 ;閉じるボタン（fixレイヤーなので [cm] で消える）
 [button graphic="config/menu_button_close.png" enterimg="config/menu_button_close2.png" target="*ach_backtitle" x=1150 y=40 ]
 
@@ -68,6 +85,10 @@
 
 *ach_backtitle
 [cm]
+;スクロール用のホイールリスナを解除
+[iscript]
+if (window._ach_wheel) { window.removeEventListener('wheel', window._ach_wheel, true); window._ach_wheel = null; }
+[endscript]
 ;一覧のテキストとレイヤー1の画像を消してからタイトルへ戻る
 [free layer=1 name="ach_board"]
 [freeimage layer=1]

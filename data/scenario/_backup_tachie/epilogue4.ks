@@ -2,27 +2,22 @@
 
 *epilogue4_start
 [cm]
-[chara_hide_all time=300]
 ;演出案：野営地の朝・灰と朝露、撤収（峠_3／朝）
 [bg storage="峠_3.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
 
 #
 鳥の声で目が覚めた。焚き火はとっくに白い灰になっていて、朝露が荷物の表面をうっすら濡らしていた。[p]
-[tsubasa_r face="normal"]
 椿紗「……肩、痛いです」[p]
 朱雀「そりゃ悪かったな、一晩枕にされて」[p]
 椿紗「文句、言ってるわけじゃないですよ」[p]
 #
 そっぽを向いた椿紗の耳が、寒さのせいだけでもなさそうに赤かった。[p]
 焚き火の残り火に、三鷹さんが小さな鍋をかけて湯を沸かしていた。ゆらゆらと立ち上る湯気が、朝の冷えた空気に溶けていく。[p]
-[koyuki_c face="normal"]
 小雪「……白湯、飲みますか」[p]
 朱雀「もらう」[p]
 #
 差し出された椀を両手で受け取ると、じんわりとした温かさが指先から染みてきた。[p]
 起き抜けの真姫が、大きく伸びをして背骨を鳴らした。[p]
-[maki_l face="smile"]
 真姫「んーっ……よく寝ました!」[p]
 朱雀「よくそんな地面で熟睡できるな」[p]
 真姫「これでも野宿は得意なんです」[p]
@@ -33,7 +28,6 @@
 足取りが、昨日にも増して軽い。鼻歌まで飛び出しそうな勢いだった。[p]
 三鷹さんは黙々と荷紐を結び直しながら、遠くの尾根を一度だけ見やった。[p]
 朱雀「……お前も、緊張してるのか」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……忍びの里に、余所者として入るんです。緊張くらいはします」[p]
 #
 言った本人は、いつもと変わらない顔で紐を結び終えていた。[p]
@@ -44,22 +38,17 @@
 小雪「山を焼くわけには、いきませんので」[p]
 #
 灰の上に土をかぶせ終えると、小雪はようやく満足げに頷いて歩き出した。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……手土産、これで足りますかね」[p]
 #
 差し出した風呂敷には、金成屋自慢の干菓子が几帳面に並んでいた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「十分すぎるくらいです! 里のみんな、甘いもの、あんまり食べないので」[p]
 朱雀「気に入ってもらえるといいけどな」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さんが選んだんじゃなくて、私が選んだので大丈夫です」[p]
 朱雀「信用ないな、俺」[p]
 #
 朝飯代わりに囓った干し飯は、水を含んでもまだ硬く、顎がだるくなるまで噛む羽目になった。[p]
 朱雀「……硬い」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「贅沢言わないでください、貴重な兵糧なんですから」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さん、それ、奥歯で噛んだほうが楽ですよ」[p]
 朱雀「教えるの遅いって、もう半分噛んだ」[p]
 #
@@ -68,13 +57,9 @@
 ………[p]
 
 ;演出案：背の高い竹林・迷わせ用の道（参道_1で竹林代用／まだらな木漏れ日）
-[chara_hide_all time=300]
 [bg storage="参道_1.jpg" time=1200 method="crossfade"]
-[ambient_light color="none" time=600]
-[tsubasa_r face="normal"]
 尾根に取り付く手前、道は一度、背の高い竹林に飲み込まれた。風が吹くたびに、竹同士がぶつかってからんからんと乾いた音を立てる。[p]
 椿紗「……なんか、方向感覚おかしくなりそうです」[p]
-[maki_l face="normal"]
 真姫「ここ、わざとそうなってるんです。迷わせる用に」[p]
 朱雀「わざとって、俺たちも迷うやつじゃないか、それ」[p]
 真姫「大丈夫です、目印覚えてますから」[p]
@@ -86,18 +71,13 @@
 朱雀「先に言えよ、そういうのは」[p]
 #
 額をさすりながら歩き出すと、今度は椿紗が同じ枝に引っかかりそうになって、すんでのところで身をかがめた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……危なかった。学習しました」[p]
 椿紗「……真姫さん、さっきの竹と、同じ竹に見えるんですけど」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「気のせいです、たぶん」[p]
 #
 「たぶん」に、椿紗が露骨に不安そうな顔をした。それでも真姫の足取りに迷いはなく、ほどなく竹林を抜けた。[p]
 ;演出案：雑木林＝伊賀の里の隠された入り口（峠_4／落とし穴・罠コメディ）
-[chara_hide_all time=300]
 [bg storage="峠_4.jpg" time=900 method="crossfade"]
-[ambient_light color="none" time=600]
-[maki_l face="normal"]
 尾根を越えると、ただの雑木林にしか見えない一角に出た。木々の間から漏れる光が、地面にまだらな模様を落としている。[p]
 朱雀「……ここ、本当に里の入り口か? ただの森にしか見えないぞ」[p]
 真姫「そこがミソなんです。見つからないように作られてますから」[p]
@@ -119,9 +99,7 @@
 #
 背後で、ひゅん、と乾いた音が三つ重なって鳴り、3つの悲鳴がほぼ同時に上がった。[p]
 真姫「うわあああっ!?」[p]
-[tsubasa_r face="normal"]
 椿紗「きゃあっ!?」[p]
-[koyuki_c face="normal"]
 小雪「わひゃあ!?」[p]
 朱雀「……お、おい、どうした!?」[p]
 #
@@ -138,61 +116,44 @@
 朱雀「……あー」[p]
 #
 言葉にならない声だけが、しばらく続いた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……兄さん、見てないで、助けてください」[p]
 朱雀「あ、ああ、悪い。今行く」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……三人一緒、というのは、聞いてません」[p]
-[chara_face name="maki" face="surprised" storage="chara/maki/surprised.png"]
 真姫「まさか、範囲まで広げられてるとは……! 昔はもっと狭かったはずなのに!」[p]
 #
 一人分の重さしか覚えていなかった記憶と、目の前の状況が噛み合わず、真姫自身も戸惑っていた。[p]
 土だらけの膝を払いもせず、朱雀は真っ先に網の元へ向かった。[p]
 垂れ下がった縄を辿ると、太い幹に打ち込まれた一本の楔に行き着いた。三人分の重みのせいか、真姫だけのときより深く食い込んでいる。[p]
 朱雀「……これ、抜けるのか?」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……抜くしかないと思います」[p]
 #
 両手をかけて体重を乗せ、何度か揺すり続けると、ようやく楔が緩んで抜けた。ざらついた木肌が掌に食い込んで、じんと痛んだ。縄が緩み、[quake time=400 hmax=9 vmax=7]三人纏めてどさりと地面に落ちる。折り重なるように転がった体が、それぞれ小さく呻いた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……いたた」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……重なるとか、聞いてません」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……下敷きは、勘弁してほしいです」[p]
 #
 一番下になっていたのが誰か、しばらく無言の視線が交錯した。[p]
 真っ赤な顔で立ち上がった真姫は、髪についた葉っぱを慌てて払い落としていた。頬には、網の跡がうっすら格子状に残っていた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……真姫さん、忍びなのに罠にかかるんですね」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「昔と、罠の位置、変わってたんです! きっと!」[p]
 #
 早口の言い訳に、誰も突っ込まなかった。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……それより、兄さんの方が情けない落ち方してましたよね」[p]
 朱雀「あれは不可抗力だ」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「落とし穴に落ちるあるじ様、初めて見ました!」[p]
 朱雀「見なくていい」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……存外、忍びより先に、落とし穴を踏み抜くとは思いませんでした」[p]
 朱雀「けなされてる気がする」[p]
 #
 小雪だけが、外れた楔を拾い上げて、しげしげと眺めていた。[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……このくらいの仕組み、うちの蔵の鍵にも使えそうですね」[p]
 朱雀「物騒なこと考えるなよ」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「小雪さん、目、本気ですよ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……冗談です、たぶん」[p]
 #
 「たぶん」の一言に、誰も安心できなかった。[p]
 腫れかけた足首を気にする真姫のために、椿紗が手拭いを冷たい沢の水に浸して差し出した。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……これ、当てておいてください」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「ありがとうございます。……でも本当に、大丈夫ですから」[p]
 #
 そう言いつつも、差し出された手拭いを大人しく足首に巻きつけていた。[p]
@@ -201,7 +162,6 @@
 ………[p]
 騒ぎを聞きつけたのか、林の奥から一人の男が現れた。日に焼けた顔に、飄々とした笑みを浮かべている。[p]
 頭「おお、真姫。無事に……ん? 何やら騒がしかったが」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「頭!」[p]
 #
 駆け寄った真姫の頭を、頭は無造作にわしわしと撫でた。子どもにするみたいな手つきだった。[p]
@@ -218,7 +178,6 @@
 #
 軽く笑ったあと、頭はふっと表情を崩した。[p]
 頭「呼んでおいて悪かったな。防犯設備、止めるの忘れてたわ」[p]
-[chara_face name="maki" face="surprised" storage="chara/maki/surprised.png"]
 真姫「……えっ」[p]
 頭「なに、真姫がいるんだ、どうにかなったろ」[p]
 #
@@ -240,7 +199,6 @@
 頭「……こいつぁ、傑作だ」[p]
 #
 腹を抱えて笑いだした頭に、真姫が耳まで真っ赤にして抗議した。[p]
-[chara_face name="maki" face="surprised" storage="chara/maki/surprised.png"]
 真姫「わ、笑わないでください!」[p]
 頭「いや悪い悪い。……にしても」[p]
 #
@@ -259,10 +217,7 @@
 ……[wait time=500][r]
 ………[p]
 ;演出案：伊賀の里の集落・段々畑、井戸端、素振りする子ら（村の広場_1）
-[chara_hide_all time=300]
 [bg storage="村の広場_1.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
-[maki_l face="normal"]
 里の中は、思ったより静かで、のどかだった。子どもたちが土手で追いかけっこをしていて、井戸端では女たちが洗濯をしている。よそから来た四人を、遠巻きにちらちら見る視線があちこちから飛んできた。軒先に干された洗濯物が、風にぱたぱたとはためいていた。[p]
 周囲を囲む山の斜面には、段々になった小さな畑がいくつも見えた。金成屋の裏庭よりずっと広いのに、隠すように配置されている。[p]
 真姫「あそこの畑、私が子どもの頃から手伝わされてたんです」[p]
@@ -280,14 +235,12 @@
 #
 軽く手を振って通り過ぎる真姫に、老爺は目を細めて会釈を返した。[p]
 道の反対側には、干し柿や木の実を並べた小さな露店もあった。竹籠に積まれた干し柿を見て、三鷹さんがふと足を止める。[p]
-[koyuki_c face="normal"]
 小雪「……こういう店、うちの町にもあれば」[p]
 朱雀「気になるなら買うか」[p]
 小雪「……いえ、結構です」[p]
 #
 名残惜しそうな視線を残しつつ、小雪はすぐに歩き出した。[p]
 子ども「あ、真姫姉ちゃんだ!」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「久しぶりー! みんな大きくなったんじゃないですか?」[p]
 #
 駆け寄ってきた子どもたちに囲まれて、真姫はすっかりいつもの調子を取り戻していた。誰かが袖を引っ張り、誰かが背中によじ登ろうとして、真姫はそのたびに笑いながらあしらっていた。[p]
@@ -295,15 +248,12 @@
 真姫「あ、それは……」[p]
 #
 懐を探るふりをして、真姫は困った顔で笑ってごまかしていた。[p]
-[tsubasa_r face="normal"]
 椿紗「……真姫さん、ここだと、ただの近所のお真姫さんですね」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……お帰りになる場所が、ちゃんとあるんですね」[p]
 #
 その横顔は、どこか眩しいものでも見るような目をしていた。[p]
 通りの向こうから、真姫と背格好の近い女が歩いてくるのが見えた。真姫の顔が、一瞬強張る。[p]
 女忍び「……あら、真姫。生きてたの」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……当たり前でしょう、雫」[p]
 #
 どこか刺のある挨拶を交わす二人を、朱雀たちは黙って見守った。[p]
@@ -311,21 +261,17 @@
 真姫「連れてきたんじゃなくて、一緒に来たんです」[p]
 #
 売り言葉に買い言葉のようなやり取りのあと、雫と呼ばれた女はふんと鼻を鳴らして通り過ぎていった。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……知り合いですか」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「同期です。……腐れ縁というやつです」[p]
 #
 めずらしく歯切れの悪い返事をして、真姫はそれ以上語らなかった。[p]
 井戸端の女の一人が、通りすがりに椿紗の袖を軽く引いた。[p]
 井戸端の女「お嬢さん、遠いとこからかい。喉、渇いてないかい」[p]
-[chara_face name="tsubasa" face="smile" storage="chara/tsubasa/smile.png"]
 椿紗「あ、大丈夫です、ありがとうございます」[p]
 #
 見ず知らずの相手からの気安い声かけに、椿紗は一瞬戸惑ってから、小さく頭を下げていた。[p]
 別の女がひしゃくで水を汲んで、小雪の前にも差し出す。[p]
 井戸端の女二「あんたも、飲んでいきな」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……いただきます」[p]
 #
 ひしゃく一杯の水を、小雪は行儀よく両手で受け取って飲み干した。井戸水の冷たさに、目を軽く見開いていた。[p]
@@ -346,13 +292,11 @@
 朱雀「分かってる。分かってるけど、こうなった」[p]
 #
 真姫が横で笑いをこらえきれず、肩を震わせていた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「あるじ様、商いの才はあっても、こっちの才はなさそうです」[p]
 朱雀「余計なお世話だ」[p]
 #
 見かねた三鷹さんが、落ちていた手裏剣を拾い上げると、軽く一振りで的の端に命中させた。[p]
 若い忍び「……お、やるな」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……帳場で、算盤を弾く要領です」[p]
 #
 何の関連もない理屈に、誰も突っ込む余裕がなかった。[p]
@@ -375,13 +319,10 @@
 頭「さあな。悪い話じゃあ、ないはずだ」[p]
 #
 片目をつぶって笑うと、頭はまた前を向いて歩き出した。[p]
-;演出案：頭の屋敷の板張り広間・囲炉裏、章の締め（囲炉裏_夜）
-[chara_hide_all time=300]
-[bg storage="囲炉裏_夜.png" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
+;演出案：頭の屋敷の板張り広間・囲炉裏、章の締め（屋敷内_1）
+[bg storage="屋敷内_1.jpg" time=1000 method="crossfade"]
 案内された頭の屋敷は、里の中でも一段高い場所に建っていた。板張りの広間に通されると、囲炉裏の煙がゆるく天井へ抜けていく。[p]
 壁には使い込まれた得物がいくつも掛けられていて、どれも柄の部分だけが妙につやめいていた。長年の手入れの跡だと、見ただけで分かった。[p]
-[tsubasa_r face="normal"]
 椿紗「……全部、頭が使ってたんですか」[p]
 頭「若い頃の話だよ。今は錆びさせないよう、飾ってるだけさ」[p]
 頭「茶でも飲んでいきな。……大したもんは出せないが」[p]
@@ -391,12 +332,10 @@
 頭「里で採れる茶葉でね。よそには出回らない代物だ」[p]
 #
 真姫は勝手知ったる様子で囲炉裏の脇に腰を下ろし、懐から残っていた木の実を取り出して齧っていた。[p]
-[maki_l face="normal"]
 真姫「……頭、干し柿ってまだありますか」[p]
 頭「裏の納屋に、腐るほどあるよ」[p]
 #
 「腐るほど」に反応した椿紗が、思わず眉をひそめる。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……腐ってるのは駄目だと思います」[p]
 頭「言葉のあやだよ、嬢ちゃん」[p]
 #
@@ -406,7 +345,6 @@
 頭「参考、ね。あんたなら、うまくやりそうだ」[p]
 #
 軽く笑って、頭は湯呑みの中身を飲み干した。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「あるじ様なら、大丈夫ですよ。……今のところは」[p]
 朱雀「今のところ、が地味に不安なんだが」[p]
 真姫「これからの頑張り次第です!」[p]
@@ -426,9 +364,8 @@
 ;第一章クリアの実績
 [ach id="chapter1_clear"]
 [cm]
-[chara_hide_all time=300]
 @layopt layer=message0 visible=false
-[image layer="0" page="fore" visible=true left=0 top=0 storage="村の広場_1.jpg" folder="bgimage"]
+[image layer="0" page="fore" visible=true left=0 top=0 storage="iga.png"]
 [image layer="1" page="fore" visible=true left=0 top=0 storage="end_chapter1.png"]
 [glink text="タイトルへ戻る" target="*epilogue_to_title" x=470 y=560 width=340 size=26 color="#ffe9c2"]
 [s]

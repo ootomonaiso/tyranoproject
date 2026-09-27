@@ -2,40 +2,30 @@
 
 *epilogue3_start
 [cm]
-[chara_hide_all time=300]
-[bg storage="峠_1.jpg" time=1000 method="crossfade"]
-[ambient_light color="rgb(70,85,130)" time=600]
+[bg storage="yamayoru.png" time=1000 method="crossfade"]
 
 #
 広げた茣蓙の上に、めいめい荷を下ろす。まだ火の勢いは弱く、四人分の影が地面で頼りなく揺れていた。[p]
-[maki_l face="normal"]
 真姫「今日はここで休みましょう。木の陰だと、風も少しはましです」[p]
 #
 言われるまま、朱雀は木の根元に近い場所へ荷を置いた。根の凹凸が背中に当たって、寝心地はお世辞にも良くなさそうだった。[p]
-[tsubasa_r face="normal"]
 椿紗「……この根っこ、地味に痛そうですね」[p]
 朱雀「気にするな。多分すぐ慣れる」[p]
 #
 自分に言い聞かせるような口調に、椿紗が横目で笑っていた。[p]
 焚き火がぱちぱちと爆ぜる音を、しばらく四人で黙って聞いていた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「お腹すきましたね」[p]
 朱雀「同感だ」[p]
 真姫「よし、任せてください! これでも忍の端くれ、山で飢えることだけはないんです!」[p]
 #
 懐から取り出した干し肉と、道中で摘んだきのこを、真姫は手際よく串に刺していく。火にかざすと、脂がぽたぽたと落ちて、じゅっと小さな音を立てた。脂が焦げる匂いが、風に乗って鼻先まで届く。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……真姫さん、それ、火の通り方が随分と早業ですね」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「これでも修行の成果です!」[p]
 #
 串をくるくる回す手つきに迷いがなく、皮目にはうっすら焦げ色までついていた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「そのきのこ、何て名前なんですか」[p]
-[chara_face name="maki" face="surprised" storage="chara/maki/surprised.png"]
 真姫「……えっと、なんだったかな。美味しいきのこ、としか覚えてません」[p]
 朱雀「大丈夫か、それ」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「今まで食べて平気だったので、大丈夫です!」[p]
 #
 根拠になっているのかいないのか分からない返事に、椿紗が不安げな顔をした。[p]
@@ -45,18 +35,14 @@
 朱雀「素直に美味いのが逆に怖いんだが」[p]
 #
 椿紗が横からひょいと串を取って、自分も一口かじる。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……本当に美味しいです」[p]
 朱雀「お前が作るのと大違いだな」[p]
 椿紗「今、それ言う必要ありました?」[p]
 #
 つんとむくれながらも、椿紗は結局もう一本おかわりをせがんでいた。[p]
 三鷹さんはきのこの串を一本、皿代わりの葉の上に丁寧に並べていた。[p]
-[koyuki_c face="think"]
 小雪「……きのこ、毒があるものと、ないものと、真姫さんは見分けがつくんですか」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「もちろんです! これでも山育ちなので」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……なら、安心して食べられます」[p]
 #
 一つ摘んで口に運んだ三鷹さんは、目を細めてしばらく味わっていた。[p]
@@ -64,14 +50,11 @@
 小雪「……悪くないです」[p]
 #
 言葉少なに答えると、もう一つ手を伸ばしていた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「あ、そうだ。もう一品ありますよ」[p]
 #
 懐からもう一つ包みを取り出すと、干した木の実を火のそばの平たい石に並べ始めた。じりじりと炙られて、香ばしい匂いが立ち上る。[p]
 真姫「これ、炙ると香りが出て美味しいんです」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「真姫さん、荷物どうなってるんですか。いくらでも出てきますね」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「忍びの心得その一、荷は多めに、です!」[p]
 #
 胸を張った真姫だったが、直後に懐から転がり落ちた小石が焚き火の縁に当たって跳ねた。[p]
@@ -79,16 +62,12 @@
 朱雀「なんでも出てくるんだな、その懐」[p]
 #
 炙った木の実を配りながら、真姫はもう一度胸を張り直していた。噛むと、香ばしさの奥にほんのり甘みが残った。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……美味しいです、これ」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「でしょう! ……あ、これも謙遜せず言えました」[p]
 #
 自分で自分に突っ込むように呟いた真姫を見て、椿紗が小さく吹き出した。[p]
 食後、三鷹さんが竹筒の白湯を配って回った。冷えた体に、じんわりと熱が染みていく。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……美味しいです、ただのお湯なのに」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……疲れてると、そう感じるものです」[p]
 #
 湯気の向こうで揺れる小雪の横顔を、椿紗はしばらく見つめていた。[p]
@@ -102,21 +81,16 @@
 #
 言葉の割に、結び目を確かめる指先が、少しだけ長く布の上に留まっていた。[p]
 残った干し肉を炙りながら、真姫がふと空を見上げた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「明日には、里が見えてくるはずです」[p]
 朱雀「……お前の故郷か」[p]
 真姫「はい。……あんまり、褒められた場所じゃないですけど」[p]
 #
 めずらしく声を落として、真姫は串の先をじっと見つめていた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「へえ、真姫さんでも謙遜するんですね」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「するときはします!」[p]
 朱雀「……褒められた場所じゃない、ってのは?」[p]
 真姫「んー……子どもの頃は、抜け出したくて仕方なかった場所です」[p]
-[chara_face name="tsubasa" face="smile" storage="chara/tsubasa/smile.png"]
 椿紗「意外です。真姫さん、里の話するとき、いつも楽しそうなのに」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「今はそう思えるだけです。……昔は、違いました」[p]
 #
 それ以上は続かず、真姫は残った串をひとかじりして、話を切り上げるように立ち上がった。[p]
@@ -124,7 +98,6 @@
 #
 すぐにいつもの調子に戻って、真姫は残りの串を頬張った。[p]
 食べ終えた串や葉を、椿紗が集めて近くの沢へ運んでいく。月明かりを受けた水面が、ゆらゆらと銀色に揺れていた。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……水、冷たい」[p]
 #
 指先を浸して洗いながら、椿紗は小さく身震いした。[p]
@@ -137,55 +110,40 @@
 水音を立てて追いかける後ろ姿に、朱雀は笑いをこらえながら付き合った。拾い上げた串を握りしめて戻ってきた椿紗の袖は、案の定びしょ濡れになっていた。[p]
 食後、誰からともなく火の番の順を決める話になった。[p]
 朱雀「……交代で見張るか。誰からいく?」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「私からいきます! 気配に敏感なので」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「私はもう眠いです……」[p]
 #
 言いながら、椿紗はすでに半分舟を漕ぎ始めていた。[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……私も、少し起きていられます」[p]
 朱雀「じゃあ、俺と小雪で最初、そのあと真姫、でいいか」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「了解です!」[p]
 #
 決まったはずの順番は、結局この夜、誰も律儀に守らなかった。[p]
 手持ち無沙汰になった椿紗が、膝を抱えて話を振った。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……真姫さん、忍びの里って、何か怖い話とかあるんですか」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……ありますよ。夜中に山を歩くと、道案内する灯りが出るとか」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「灯り、ですか」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「あ、時々言葉、変になっちゃって」[p]
 朱雀「お前もか」[p]
 #
 言い合う二人を横目に、朱雀は膝を抱えて話に加わった。[p]
 朱雀「……その灯り、ついていったらどうなるんだ」[p]
 真姫「さあ。ついていった人の話、聞いたことないので」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「それ、一番怖いやつです」[p]
 #
 声を潜めた椿紗が、無意識に朱雀の袖をきゅっと掴んでいた。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……あ、そうだ、もっと怖いのもあります。夜中に草履の音だけついてくるって話」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……もう、やめてください」[p]
 #
 両耳を塞いだ椿紗に、真姫はいたずらっぽく笑っていた。[p]
 朱雀「……逆に聞くけど、忍びって、そういうの平気なのか」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「得意ではないです、正直」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……真姫さんでも、怖いものあるんですね」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「そりゃ、ありますよ。……人並みには」[p]
 #
 心なしか声のトーンが落ちて、真姫は焚き火の炎をじっと見つめていた。[p]
 朱雀「……ちなみに、俺の世界にも似たような話あるぞ。学校の階段の段数が、数えるたびに違うとか」[p]
 真姫「がっこう、の話、また出ましたね」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「兄さん、それただの都市伝説です」[p]
 朱雀「都市伝説って言葉、椿紗はもう普通に使うようになったな」[p]
 椿紗「郷に入っては、というやつです」[p]
@@ -193,19 +151,15 @@
 軽口が続くうちに、さっきまでの重い空気は、いつの間にか薄れていた。[p]
 真姫が退屈しのぎに、懐から小柄を取り出してくるくると指先で回し始めた。[p]
 朱雀「……それ、危なくないのか」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「慣れてるので平気です。見てます?」[p]
 #
 言うが早いか、小柄は宙で一回転して真姫の手のひらに戻ってくる。危なげのない動きに、椿紗が思わず拍手した。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……真姫さん、それ、格好いいです」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「でしょう! ……あ、これも謙遜せず」[p]
 朱雀「お前、さっきからそのパターン多いな」[p]
 #
 真姫が調子に乗って二回転させようとした瞬間、小柄が指先を滑って地面に転がった。[p]
 真姫「……あ」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……台無しです」[p]
 #
 慌てて拾い上げる真姫の耳が、暗がりでもわかるくらい赤くなっていた。[p]
@@ -220,17 +174,14 @@
 椿紗「気のせいです」[p]
 #
 言いながらも、腕にしっかりと自分の腕を絡めてくる。焚き火の灯りに照らされた耳が、ほんのり赤かった。[p]
-[chara_face name="maki" face="serious" storage="chara/maki/serious.png"]
 真姫「あー、椿紗さん、ずるいです! 私もくっつきます!」[p]
 朱雀「くっつくな、暑苦しい」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「寒いんですもん!」[p]
 #
 反対側からもたれかかってきた真姫を押し返す気力もなく、朱雀は結局、両側から挟まれる格好で焚き火を見つめ続けた。[p]
 真姫の髪から、木の実と土埃の混じった匂いがふわりと漂う。椿紗の肩は、思ったより骨ばって軽かった。[p]
 朱雀「……お前ら、もうちょっと離れてくれても」[p]
 真姫「無理です、寒いので」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「私も無理です」[p]
 #
 二人とも即答だった。妙に息が合っているのが、少し腹立たしい。[p]
@@ -239,58 +190,46 @@
 朱雀「風のせいだから諦めろ」[p]
 #
 真姫が枝を一本、火の位置をずらすように差し込むと、煙の流れがすぐに逸れていった。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……よし、直りました」[p]
 朱雀「お前、そういう細かい気配り地味に頼りになるな」[p]
 真姫「地味は余計です!」[p]
 #
 茂みの奥で、がさりと大きな音がした。四人同時に肩を跳ねさせる。[p]
-[chara_face name="tsubasa" face="surprised" storage="chara/tsubasa/surprised.png"]
 椿紗「……な、なんですか、今の」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……ちょっと、待っててください」[p]
 #
 腰を浮かせた真姫が、抜き足で茂みへ近づいていく。しばらくして、拍子抜けした声が返ってきた。[p]
 真姫「……野兎でした。逃げてきましたけど」[p]
 朱雀「脅かすなよ、心臓に悪い」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「私、ちょっと本気で悲鳴出そうでした」[p]
 #
 胸を撫で下ろす椿紗の隣で、真姫はまだ茂みの方向を警戒するように見ていた。目だけが、いつもよりわずかに鋭かった。[p]
 朱雀「……今の目、忍って感じだったな」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……見てました?」[p]
 朱雀「ばっちり」[p]
 真姫「気のせいです」[p]
 #
 すぐにいつもの笑顔に戻ると、真姫は元の位置にどすんと座り直した。[p]
 落ち着きを取り戻したころ、焚き火の外側の暗がりに、小さな影がひょこりと現れた。丸い体に、ふさふさの尻尾。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……あ、狸」[p]
 #
 つぶらな目でこちらを窺っていた狸は、しばらく様子を見たあと、落ちていた木の実を一つくわえて茂みへ戻っていった。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……可愛かったですね、今の」[p]
 朱雀「……うちのタヌキ、思い出すな」[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「久兵衛、元気にしてますかね」[p]
 朱雀「婆さまが見てるから平気だろ」[p]
 #
 束の間、四人の間に和んだ空気が流れた。[p]
 少し経って、今度は小雪が茂みの方角へ視線を向けたまま動きを止めた。[p]
 朱雀「……どうした」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……何か、光った気がしました」[p]
 #
 全員が息を潜めて茂みを見つめる。しばらくして、ふわりと小さな光が一つ、二つと浮かび上がった。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……蛍、ですか」[p]
-[chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
 真姫「よかった、また幽霊の話思い出すところでした」[p]
 #
 安堵の空気が流れる中、小雪だけはまだ茂みの方を見ていた。目の端に、ほのかな光が映っていた。[p]
 しばらくして、うとうとしていた真姫がはっと目を覚ました。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「……あ、私の番でした?」[p]
 朱雀「別にまだいい。寝てろ」[p]
 真姫「でも、順番決めたのに」[p]
@@ -305,16 +244,12 @@
 聞き取れない寝言の内容は、結局分からずじまいだった。[p]
 三鷹さんだけは、少し離れた場所で荷を整理していた。指先が薄闇の中で、袋の口を一つ一つ確かめるように動いている。[p]
 朱雀「……小雪は、こっち来ないのか」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……火の番は、誰かがしないといけませんので」[p]
 #
 そう言いながらも、小雪は皆の荷から一枚ずつ薄手の布を取り出して、静かに配って回った。[p]
 小雪「……夜露で、冷えます。羽織ってください」[p]
-[chara_face name="tsubasa" face="smile" storage="chara/tsubasa/smile.png"]
 椿紗「……ありがとうございます」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「小雪さん、気が利きますねえ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「当然のことです」[p]
 #
 配り終えると、小雪は焚き火の脇にきちんと座り直し、燃え尽きかけた枝をそっと火にくべた。炎が一瞬、勢いを取り戻して爆ぜる。火の粉が二つ三つ、宙に舞ってすぐに消えた。[p]
@@ -323,31 +258,25 @@
 #
 腰を下ろした小雪との間には、椿紗と真姫、二人分の隙間があった。[p]
 膝の上に乗せた布を、指先で意味もなく撫でつけている。[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「小雪さんも、たまには寄ってきていいんですよ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……ここが、ちょうどいいんです」[p]
 #
 そう言った声は、拒んでいるふうでもなかった。[p]
 椿紗が眠そうな声のまま、ふと空を指差した。[p]
-[chara_face name="tsubasa" face="normal" storage="chara/tsubasa/normal.png"]
 椿紗「……星、多いですね。町だと、こんなに見えないです」[p]
 朱雀「……スマホの星座アプリより、実物のほうが早いな、これ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「すまほ、とは?」[p]
 朱雀「……いや、こっちの話」[p]
 #
 椿紗が小さく笑って、また目を閉じた。星の光が、四人の頭上でまばらに瞬いていた。[p]
 虫の声が、絶え間なく茂みから聞こえてくる。時折、闇の奥で何か小さな生き物が跳ねる気配がした。[p]
 朱雀「……熊とか出ないよな、ここ」[p]
-[chara_face name="maki" face="normal" storage="chara/maki/normal.png"]
 真姫「大丈夫です、私が起きてれば気配で分かりますから」[p]
 朱雀「その自信、さっき転んだやつが言うことか?」[p]
 真姫「あれとこれとは話が別です!」[p]
 #
 言い合ううちに、椿紗の頭が、いつの間にか朱雀の肩にことりと乗っていた。規則正しい寝息が、静かに続いている。[p]
 朱雀「……寝るの早いな、こいつ」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「今日は、よく歩きましたので」[p]
 #
 真姫も欠伸を一つ噛み殺すと、荷物にもたれてすぐにうとうとし始めた。半分閉じた瞼の下で、目玉がゆっくり動いていた。[p]
@@ -377,12 +306,10 @@
 それでも、いつもより少しだけ、火に近い位置に座り直していた。[p]
 梢の隙間から差し込む月明かりが、小雪の横顔に薄い陰影を落としていた。昼間の日差しの下とは違う、柔らかい輪郭に見えた。[p]
 朱雀「……月、明るいな、今日」[p]
-[chara_face name="koyuki" face="think" storage="chara/koyuki/think.png"]
 小雪「……そうですね」[p]
 #
 短い相槌のあとで、二人ともまた黙って火を見つめた。[p]
 朱雀「……明日から、どんな顔して頭に会えばいいんだろうな、俺」[p]
-[chara_face name="koyuki" face="normal" storage="chara/koyuki/normal.png"]
 小雪「……いつも通りで、いいと思います」[p]
 朱雀「いつも通りって、どんなだよ」[p]
 小雪「……帳面と、同じです。多く見せようとすると、大体、ぼろが出ます」[p]
@@ -411,5 +338,4 @@
 薪が燃え尽きるまで、その静けさが続いた。[p]
 
 [cm]
-[chara_hide_all time=300]
 @jump storage="epilogue4.ks"

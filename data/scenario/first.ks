@@ -14,6 +14,9 @@
 ;環境光プラグイン（tsp-ambient-light）を読み込み
 [plugin name="ambient_light"]
 
+;立ち絵キャラクター定義を読み込み
+@call storage="chara_def.ks"
+
 ;メッセージボックスは非表示
 @layopt layer="message" visible=false
 
