@@ -58,9 +58,27 @@ $('#discLang .ui-btn').on('click', function (e) {
 // --- 同意する：パネルを消して先へ進む ---
 //   config の「戻る」と同様、クリックがメッセージ送りへ伝播しないよう
 //   伝播を止め、復帰は次tickへ遅延させる。
+//   ★ここで音声ロック(AudioContext suspended)を解除しておく。
+//     TyranoScript は Howler の自動解除を切り、ユーザー操作で解除する仕様だが、
+//     上の stopPropagation でこのクリックがエンジンの解除処理に届かない。
+//     解除しないと起動ロゴの [playse] が再生ロック待ちでループ停止し、
+//     「クリックしないとロゴから先へ進まない」不具合になる。
+//   ★音声アンロックはエンジン自身の kag.readyAudio() で行う。
+//     TyranoScript は信頼済みクリック時に readyAudio() を呼んで
+//     kag.tmp.ready_audio=true にし、無音を1発鳴らして AudioContext を解除する。
+//     ところが上の stopPropagation でこのクリックがエンジンのハンドラに届かず
+//     readyAudio() が呼ばれない → ready_audio が false のままで、起動ロゴの
+//     [playse] がアンロック待ちで停止＝「ロゴ表示後クリックしないと音が鳴らない／
+//     先へ進まない」不具合になっていた。ここで直接呼んで確実に解除する。
 $('#discYes').on('click', function (e) {
   e.preventDefault();
   e.stopPropagation();
+  try {
+    // 信頼済みユーザー操作内なので、ここで呼べば無音再生による解除が有効。
+    if (TYRANO.kag.tmp.ready_audio !== true && typeof TYRANO.kag.readyAudio === 'function') {
+      TYRANO.kag.readyAudio();
+    }
+  } catch (err) {}
   setTimeout(function () {
     TYRANO.kag.ftag.startTag('jump', { target: '*disc_done' });
   }, 0);
