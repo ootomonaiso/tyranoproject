@@ -238,7 +238,7 @@
 #
 椿紗……俺は……お兄ちゃんは……好き好んでタヌキと仲睦まじく森の中を闊歩する趣味はないよ……[p]
 [chara_face name="maki" face="smile" storage="chara/maki/smile.png"]
-真姫「そこの小雪と、この私がサポートしますよ！」[p]
+真姫「そこの小雪と、この私がお助けしますよ！」[p]
 [koyuki_in face="normal"]
 [ruby text="こ"]小[ruby text="ゆき"]雪「あっ……初めまして。私は[ruby text="み"]三[ruby text="たか"]鷹小雪と申します。金成屋の旦那様、これからよろしくおねがいします」[p]
 [maki_l face="smile"]

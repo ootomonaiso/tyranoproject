@@ -193,8 +193,14 @@
 	});
 
 	// --- 戻る：パネルを消して *backtitle へ（適用はそちらで） ---
-	$('#cfgBack').on('click', function () {
-	  TYRANO.kag.ftag.startTag('jump', { target: '*backtitle' });
+	//   このクリックが復帰(awakegame)後のメッセージ送りへ伝播すると
+	//   「セリフが1つ進む」不具合になる。→ 伝播を止め、復帰は次tickへ遅延。
+	$('#cfgBack').on('click', function (e) {
+	  e.preventDefault();
+	  e.stopPropagation();
+	  setTimeout(function () {
+	    TYRANO.kag.ftag.startTag('jump', { target: '*backtitle' });
+	  }, 0);
 	});
 
 	[endscript]

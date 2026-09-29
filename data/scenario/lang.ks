@@ -42,11 +42,32 @@ window.LANG_TABLE = {
     cfg_back:     '戻る',
     // --- 共通 ---
     common_close: '閉じる',
+    // --- ゲーム中メニュー（☰）---
+    menu_title:   'メニュー',
+    menu_save:    'セーブ',
+    menu_load:    'ロード',
+    menu_hide:    'メッセージを隠す',
+    menu_skip:    'スキップ',
+    menu_totitle: 'タイトルへ',
+    // --- セーブ/ロード/バックログ画面 ---
+    scr_save:     'セーブ',
+    scr_load:     'ロード',
+    scr_backlog:  '既読ログ',
+    scr_nodata:   'データなし',
     // --- 実績 ---
     ach_title:    '実績',
     ach_unlocked: '解除',
     ach_locked:   '？？？',
-    ach_toast:    '実績を解除'
+    ach_toast:    '実績を解除',
+    // --- 免責事項（起動時）---
+    disc_title:   '免責事項',
+    // ↓成人向け（18禁）の文言はいったん省略。復活させる場合は本文の先頭に戻す：
+    //   '本作には成人向け（18禁）の表現が含まれます。<br>また' を disc_body の頭に付ける
+    disc_body:    '本作はフィクションであり、登場する人物・団体・名称・出来事はすべて架空のものです。本作のご利用によって生じたいかなる損害についても、制作者は一切の責任を負いかねます。',
+    disc_q:       '上記の内容に同意しますか？',
+    disc_yes:     '同意する',
+    disc_no:      '同意しない',
+    disc_deny:    '内容にご同意いただけない場合、本作はご利用いただけません。ブラウザ（またはアプリ）を閉じてください。'
   },
   en: {
     // --- Title ---
@@ -70,11 +91,32 @@ window.LANG_TABLE = {
     cfg_back:     'Back',
     // --- Common ---
     common_close: 'Close',
+    // --- In-game menu (☰) ---
+    menu_title:   'Menu',
+    menu_save:    'Save',
+    menu_load:    'Load',
+    menu_hide:    'Hide Text',
+    menu_skip:    'Skip',
+    menu_totitle: 'To Title',
+    // --- Save/Load/Backlog screens ---
+    scr_save:     'Save',
+    scr_load:     'Load',
+    scr_backlog:  'Backlog',
+    scr_nodata:   'No Data',
     // --- Achievements ---
     ach_title:    'Achievements',
     ach_unlocked: 'Unlocked',
     ach_locked:   '???',
-    ach_toast:    'Achievement Unlocked'
+    ach_toast:    'Achievement Unlocked',
+    // --- Disclaimer (at startup) ---
+    disc_title:   'Disclaimer',
+    // Adult (18+) wording omitted for now. To restore, prepend to disc_body:
+    //   'This game contains adult (18+) content.<br>' + change 'This game is' -> 'This game is also'
+    disc_body:    'This game is a work of fiction; all characters, organizations, names, and events are fictional. The creators assume no responsibility whatsoever for any damages arising from the use of this software.',
+    disc_q:       'Do you agree to the above?',
+    disc_yes:     'I Agree',
+    disc_no:      'I Do Not Agree',
+    disc_deny:    'If you do not agree, you may not use this game. Please close this browser (or app).'
   }
 };
 

@@ -5,6 +5,9 @@
 [cm]
 [clearfix]
 
+;本編開始：タイトルBGM（Marginalia）を止める（滑らかにフェードアウト）
+[fadeoutbgm time="1500"]
+
 ;実績「金成屋、開店」を解除（新規ゲーム開始時）
 [ach id="start_game"]
 

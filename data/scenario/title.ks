@@ -11,6 +11,12 @@
 @bg storage ="title.png" time=100
 @wait time = 200
 
+;タイトルBGM（爆音＝最大音量）。CG/回想/実績から戻った際に頭出しし直さないよう、
+;既に同じ曲が鳴っている時は再生しない（current_bgm はエンジンが管理する再生中の曲名）。
+[if exp="TYRANO.kag.stat.current_bgm !== 'Marginalia_INST.wav'"]
+[playbgm storage="Marginalia_INST.wav" volume="100"]
+[endif]
+
 *start
 
 ;================================================================================
@@ -66,10 +72,27 @@ hlLang();
 $('#title_menu [data-native]').on('click', function () {
   var cls = $(this).attr('data-native');
   // 画面遷移するボタン（config/load以外）はオーバーレイを先に除去して残留を防ぐ
+  // config/load は「開いてキャンセル→タイトルに戻る」場合があるためここでは残す。
   if (cls !== 't_config' && cls !== 't_load') {
     $('#title_menu').remove();
   }
   $('.' + cls).trigger('click');
+});
+
+// ロード画面で「実データのある」セーブスロットが選ばれた時だけタイトルHTMLメニューを除去。
+//   ・t_load 押下では上記のとおり残しているため、ロード確定時にここで片付ける。
+//   ・キャンセル（× menu_close）ではスロットを押さないので残り、タイトルに戻れる。
+//   ・★空スロット（データ無し）はロードされずロード画面も閉じない。ここで消すと
+//     ×を押した後にタイトルのボタンが消え「何も押せない」状態になるため、除去しない。
+//     空スロットは日付テキストが空・サムネイル画像も無いので、それで判定する。
+//   ・委譲＋名前空間つきで多重登録を防止。ゲーム中ロードでも #title_menu 不在で無害。
+$(document).off('click.titleLoadClean').on('click.titleLoadClean', '.save_list_item', function () {
+  var $slot = $(this);
+  var hasData = $.trim($slot.find('.save_list_item_date').text()) !== '' ||
+                $slot.find('.save_list_item_thumb img').length > 0;
+  if (hasData) {
+    $('#title_menu').remove();
+  }
 });
 
 // 言語切替（タイトルからでも切替可能）

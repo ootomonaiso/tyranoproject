@@ -6,6 +6,18 @@
    画面を増やすときは .ui-screen--xxx を足していく。
    ============================================================================ */
 
+/* --- 配色トークン（上品な和風：淡金×墨紺）。ここを変えると全UIが揃う ---------
+   :root に置くことで .ui-screen 内でも、ゲーム中システムUI(メニュー等)でも参照可。 */
+:root {
+    --ink-1:   #1c273f;   /* 墨紺（明） 面の上側 */
+    --ink-2:   #0b111f;   /* 墨紺（暗） 面の下側・地 */
+    --gold:    #c2a266;   /* 淡めの金（罫線）。オレンジみを抑える */
+    --gold-hi: #ecdcae;   /* 金の照り（縁・文字ハイライト） */
+    --gold-lo: #8a6c3a;   /* 金の陰 */
+    --ivory:   #f3ecdb;   /* 文字色（温かい生成り） */
+    --muted:   #a7b0c4;   /* 副次テキスト（数値・補助）淡い藍白 */
+}
+
 /* 画面全面に敷く共通コンテナ。ゲーム解像度(1280x720想定)に合わせる。
    .tyrano_base の上に重ねる前提で position:absolute。 */
 .ui-screen {
@@ -23,20 +35,13 @@
     z-index: 100000000;
     pointer-events: none;       /* 既定は透過。操作させたい要素だけ下で復活 */
     user-select: none;
-
-    /* --- 配色トークン（上品な和風：淡金×墨紺）。ここを変えると全UIが揃う --- */
-    --ink-1:   #1c273f;   /* 墨紺（明） 面の上側 */
-    --ink-2:   #0b111f;   /* 墨紺（暗） 面の下側・地 */
-    --gold:    #c2a266;   /* 淡めの金（罫線）。オレンジみを抑える */
-    --gold-hi: #ecdcae;   /* 金の照り（縁・文字ハイライト） */
-    --gold-lo: #8a6c3a;   /* 金の陰 */
-    --ivory:   #f3ecdb;   /* 文字色（温かい生成り） */
-    --muted:   #a7b0c4;   /* 副次テキスト（数値・補助）淡い藍白 */
 }
 
 /* 装飾用の擬似要素は一切クリックを奪わない（＝ボタン押下バグの予防） */
 .ui-screen *::before,
-.ui-screen *::after {
+.ui-screen *::after,
+.wa-menu *::before,
+.wa-menu *::after {
     pointer-events: none;
 }
 /* 操作可能パーツはクリックを受け取る */
@@ -570,4 +575,359 @@
     height: auto;
     -webkit-user-drag: none;
     user-select: none;
+}
+
+/* ============================================================================
+   免責事項（起動時）— disclaimer.ks が生成する起動直後の同意画面
+     背景は config と同じ墨紺トーン。中央に和紙風カードを1枚置き、
+     本文を読ませてから「同意して始める」で先へ進める（毎起動表示）。
+     文字は data-i18n / data-i18n-html で lang.ks から供給（JP/EN共通）。
+   ============================================================================ */
+.ui-screen--disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* config と同じ深い墨紺グラデ＋ビネットで統一感を出す */
+    background-color: #0e1524;
+    background-image:
+        radial-gradient(120% 80% at 50% -10%, rgba(120, 150, 210, 0.18), transparent 55%),
+        linear-gradient(180deg, #16203a 0%, #101827 45%, #080d17 100%);
+    box-shadow: inset 0 0 320px rgba(0, 0, 0, 0.7);
+    pointer-events: auto;           /* 背面クリックを塞ぎ、同意前に進ませない */
+}
+
+/* 和紙風カード（掛軸パネルを簡略化した一枚もの） */
+.disc-card {
+    position: relative;             /* 言語トグルの絶対配置の基準 */
+    width: 720px;
+    max-width: 86%;
+    box-sizing: border-box;
+    padding: 40px 46px 34px;
+    text-align: center;
+    border: 1px solid rgba(194, 162, 102, 0.55);
+    border-radius: 6px;
+    background:
+        linear-gradient(180deg, rgba(32, 44, 70, 0.96), rgba(12, 19, 35, 0.97));
+    box-shadow:
+        inset 0 0 0 2px rgba(11, 17, 31, 0.85),
+        inset 0 0 0 3px rgba(194, 162, 102, 0.22),
+        0 18px 48px rgba(0, 0, 0, 0.6);
+}
+
+/* カード右上の言語トグル（日本語/English） */
+.disc-lang {
+    position: absolute;
+    right: 18px;
+    top: 16px;
+    display: flex;
+    gap: 8px;
+}
+.disc-lang .ui-btn {
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+.disc-title {
+    margin: 0 0 22px;
+    font-size: 30px;
+    letter-spacing: 0.22em;
+    color: var(--gold-hi);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+/* 見出し下の金の細罫 */
+.disc-title::after {
+    content: "";
+    display: block;
+    width: 96px;
+    height: 1px;
+    margin: 14px auto 0;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.disc-body {
+    margin: 0 0 30px;
+    font-size: 17px;
+    line-height: 2;
+    text-align: left;
+    color: var(--ivory);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* 年齢確認の問い（「あなたは18歳以上ですか？」） */
+.disc-q {
+    margin: 0 0 26px;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: var(--gold-hi);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.disc-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* はい／いいえボタンは共通 .ui-btn を土台に、目線を集めるため少し大きく */
+.disc-actions .ui-btn {
+    padding: 12px 34px;
+    font-size: 21px;
+}
+
+/* 「いいえ」選択後の拒否メッセージ（進行不可） */
+.disc-deny {
+    margin: 8px 0 0;
+    text-align: center;
+    color: #f0c9c9;                 /* 淡い朱で注意色 */
+}
+
+/* ============================================================================
+   ゲーム中メニュー（☰）— 和風に全面作り直し（menu.html が使用）
+     エンジンは .menu_save / .menu_load / .menu_window_close / .menu_skip /
+     .menu_back_title / .menu_close のクラスにクリックを結合する。
+     → 見た目はここ、クラス名は保持することで動作は従来どおり。
+   ============================================================================ */
+.wa-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans JP", "游ゴシック", YuGothic, sans-serif;
+    /* 墨のスクリム＋中央上からの淡い光。背後の場面をうっすら透かす */
+    background:
+        radial-gradient(120% 80% at 50% -10%, rgba(120, 150, 210, 0.14), transparent 55%),
+        linear-gradient(180deg, rgba(10, 15, 26, 0.86), rgba(6, 10, 18, 0.92));
+    user-select: none;
+}
+/* 見出し「メニュー」 */
+.wa-menu__title {
+    margin-bottom: 34px;
+    font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "游明朝", serif;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
+    background: linear-gradient(180deg, var(--gold-hi), var(--gold) 55%, var(--gold-lo));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--gold-hi);
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6));
+    position: relative;
+}
+.wa-menu__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold) 50%, transparent);
+}
+.wa-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+/* メニュー項目（.ui-btn を土台に、縦長リスト用に大きく） */
+.wa-menu__btn {
+    min-width: 340px;
+    padding: 15px 28px;
+    font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "游明朝", serif;
+    font-size: 21px;
+    letter-spacing: 0.14em;
+    text-indent: 0.14em;
+    color: var(--gold-hi);
+}
+/* メニューの閉じるボタンは共通 .ui-btn--close をそのまま利用（右上×） */
+
+/* ============================================================================
+   セーブ / ロード / バックログ画面 — 和風に作り直し
+     デフォルトの青背景(.img_bg_base)・青ラベル(.img_label)を隠し、
+     墨のスクリム＋金の見出し＋金縁のスロットに置き換える。
+     スロットのクラス(.save_list_item 等)はエンジンが使うので保持。
+   ============================================================================ */
+#menu_save_wrapper,
+#menu_load_wrapper,
+#menu_backlog_wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", "游ゴシック", YuGothic, sans-serif;
+    background:
+        radial-gradient(120% 80% at 50% -10%, rgba(120, 150, 210, 0.12), transparent 55%),
+        linear-gradient(180deg, rgba(12, 18, 30, 0.94), rgba(6, 10, 18, 0.97));
+}
+/* デフォルトの青い背景画像・タイトルラベル画像を隠す */
+#menu_save_wrapper .img_bg_base,
+#menu_load_wrapper .img_bg_base,
+#menu_backlog_wrapper .img_bg_base,
+#menu_save_wrapper .img_label,
+#menu_load_wrapper .img_label,
+#menu_backlog_wrapper .img_label {
+    display: none !important;
+}
+
+/* 画面上部の見出し（各htmlに data-i18n 付きで追加） */
+.wa-scr__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    text-align: center;
+    font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "游明朝", serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.34em;
+    text-indent: 0.34em;
+    background: linear-gradient(180deg, var(--gold-hi), var(--gold) 55%, var(--gold-lo));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--gold-hi);
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6));
+}
+.wa-scr__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold) 50%, transparent);
+}
+
+/* セーブ/ロードのスロット一覧 */
+#menu_save_wrapper .area_save_list,
+#menu_load_wrapper .area_save_list {
+    position: absolute;
+    left: 50%;
+    top: 96px;
+    transform: translateX(-50%);
+    width: 860px;
+    max-width: 92%;
+    max-height: 560px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 6px 12px 6px 6px;
+}
+.save_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* 1スロット＝漆の札。金縁・ホバーで金グロー */
+.save_list_item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    background: linear-gradient(180deg, #1c2740, #0d1526);
+    border: 1px solid rgba(194, 162, 102, 0.55);
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 2px rgba(9, 14, 26, 0.7), 0 4px 12px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    transition: border-color 0.14s ease, box-shadow 0.14s ease, transform 0.14s ease;
+}
+.save_list_item:hover {
+    border-color: var(--gold-hi);
+    box-shadow:
+        inset 0 0 0 2px rgba(236, 220, 174, 0.3),
+        0 0 20px rgba(194, 162, 102, 0.45),
+        0 6px 16px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+.save_list_item_thumb {
+    flex: 0 0 auto;
+    width: 160px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(194, 162, 102, 0.35);
+    border-radius: 3px;
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+.save_list_item_thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.save_list_item_area {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+    text-align: left;
+    /* デフォルトのシステム画像＋灰色背景を消して札に馴染ませる */
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* スロット一覧のスクロールバーを和風（金×墨）に */
+#menu_save_wrapper .area_save_list::-webkit-scrollbar,
+#menu_load_wrapper .area_save_list::-webkit-scrollbar,
+#menu_backlog_wrapper .log_body::-webkit-scrollbar {
+    width: 10px;
+}
+#menu_save_wrapper .area_save_list::-webkit-scrollbar-track,
+#menu_load_wrapper .area_save_list::-webkit-scrollbar-track,
+#menu_backlog_wrapper .log_body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+}
+#menu_save_wrapper .area_save_list::-webkit-scrollbar-thumb,
+#menu_load_wrapper .area_save_list::-webkit-scrollbar-thumb,
+#menu_backlog_wrapper .log_body::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--gold), var(--gold-lo));
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.save_list_item_date {
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+}
+.save_list_item_text {
+    font-size: 18px;
+    color: var(--ivory);
+    line-height: 1.35;
+}
+
+/* バックログ本体 */
+#menu_backlog_wrapper .log_body {
+    position: absolute;
+    left: 50%;
+    top: 96px;
+    transform: translateX(-50%);
+    width: 900px;
+    max-width: 92%;
+    max-height: 560px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 18px;
+    color: var(--ivory);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    line-height: 1.7;
 }

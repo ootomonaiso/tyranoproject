@@ -1,8 +1,9 @@
 <div id="menu_save_wrapper">
-    <!-- 閉じるボタン -->
-    <div class="menu_item" style="float: right; margin: 20px 10px 0 0">
-        <img class="menu_close" src="./tyrano/images/system/menu_button_close.png" />
-    </div>
+    <!-- 和風の見出し（applyI18nで言語反映） -->
+    <div class="wa-scr__title" data-i18n="scr_save">セーブ</div>
+
+    <!-- 閉じる（×）。クラス menu_close は保持（エンジンが結合） -->
+    <span class="ui-btn ui-btn--close menu_close" role="button">×</span>
 
     <!-- スクロールボタン -->
     <div style="clear: both"></div>
@@ -33,20 +34,8 @@
     <img class="img_label img_label_save" src="./tyrano/images/system/label_save.png" />
     <img class="img_bg_base" src="./tyrano/images/system/bg_base.png" />
 
-    <!-- ボタンホバー時に画像を変更する -->
+    <!-- 現在言語でラベルを流し込む -->
     <script>
-        $("#menu_save_wrapper .menu_item img").each((i, elm) => {
-            const j_elm = $(elm);
-            const original_src = j_elm.attr("src");
-            const hover_src = original_src.replace(".png", "2.png");
-            j_elm.hover(
-                () => {
-                    j_elm.attr("src", hover_src);
-                },
-                () => {
-                    j_elm.attr("src", original_src);
-                },
-            );
-        });
+        if (window.applyI18n) { window.applyI18n("#menu_save_wrapper"); }
     </script>
 </div>

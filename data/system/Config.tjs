@@ -45,7 +45,6 @@
 ;maxBackLogNum=50
 ;autoRecordLabel=false
 ;unReadTextSkip=false
-;alreadyReadTextColor=0x87cefa
 ;numCharacterLayers=3
 ;scPositionX.left=160
 ;scPositionX.left_center=240

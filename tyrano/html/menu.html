@@ -1,53 +1,24 @@
-<div id="menu_menu_wrapper">
-    <div class="display_menu block_menu">
-        <!-- 閉じるボタン -->
-        <div class="menu_item" style="float: right; margin: 20px 10px 0 0">
-            <img class="menu_close" src="./tyrano/images/system/menu_button_close.png" />
-        </div>
-        <div style="clear: both"></div>
+<div id="menu_menu_wrapper" class="wa-menu">
+    <div class="wa-menu__title" data-i18n="menu_title">メニュー</div>
 
-        <!-- メニュー -->
-        <div style="margin-top: 50px">
-            <div class="menu_item menu_save_outer">
-                <img class="menu_save" src="./tyrano/images/system/menu_button_save.png" />
-            </div>
-
-            <div class="menu_item menu_load_outer">
-                <img class="menu_load" src="./tyrano/images/system/menu_button_load.png" />
-            </div>
-
-            <div class="menu_item menu_window_close_outer">
-                <img class="menu_window_close" src="./tyrano/images/system/menu_message_close.png" />
-            </div>
-
-            <div class="menu_item menu_skip_outer">
-                <img class="menu_skip" src="./tyrano/images/system/menu_button_skip.png" />
-            </div>
-
-            <div class="menu_item menu_back_title_outer">
-                <img class="menu_back_title" src="./tyrano/images/system/menu_button_title.png" />
-            </div>
-        </div>
+    <div class="wa-menu__list">
+        <!-- クラス名(menu_save 等)はエンジンがクリック結合に使うため保持する -->
+        <span class="ui-btn wa-menu__btn menu_save"         data-i18n="menu_save">セーブ</span>
+        <span class="ui-btn wa-menu__btn menu_load"         data-i18n="menu_load">ロード</span>
+        <span class="ui-btn wa-menu__btn menu_window_close" data-i18n="menu_hide">メッセージを隠す</span>
+        <span class="ui-btn wa-menu__btn menu_skip"         data-i18n="menu_skip">スキップ</span>
+        <span class="ui-btn wa-menu__btn menu_back_title"   data-i18n="menu_totitle">タイトルへ</span>
     </div>
 
-    <!-- 背景とタイトル画像 -->
-    <img class="img_label img_label_menu block_menu" src="./tyrano/images/system/label_menu.png" />
-    <img class="img_bg_base" src="./tyrano/images/system/bg_base.png" />
+    <!-- 閉じる（×）。共通の丸い閉じるボタンを流用。クラス menu_close は保持 -->
+    <span class="ui-btn ui-btn--close menu_close" role="button">×</span>
 
-    <!-- ボタンホバー時に画像を変更する -->
+    <!-- 現在言語でラベルを流し込む（applyI18n はゲーム起動時に定義済み） -->
     <script>
-        $("#menu_menu_wrapper .menu_item img").each((i, elm) => {
-            const j_elm = $(elm);
-            const original_src = j_elm.attr("src");
-            const hover_src = original_src.replace(".png", "2.png");
-            j_elm.hover(
-                () => {
-                    j_elm.attr("src", hover_src);
-                },
-                () => {
-                    j_elm.attr("src", original_src);
-                },
-            );
-        });
+        (function () {
+            if (window.applyI18n) { window.applyI18n('#menu_menu_wrapper'); }
+            var c = document.querySelector('#menu_menu_wrapper .menu_close');
+            if (c && window.L) { c.setAttribute('title', window.L('common_close')); }
+        })();
     </script>
 </div>

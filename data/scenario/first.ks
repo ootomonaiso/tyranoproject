@@ -15,6 +15,23 @@
 ;※UIの文字はここの LANG_TABLE から供給する。詳細は lang.ks 冒頭のコメント参照。
 @call storage="lang.ks"
 
+;================================================================================
+; 「タイトルへ」(role="title") の遷移先を修正
+;   TyranoScript標準の kag.backTitle() は location.href="./index.html" で
+;   ページ全体を再読込する＝first.ks が最初から再実行され、免責事項と起動ロゴまで
+;   戻ってしまう。確認ダイアログは残したまま、遷移先を title.ks への[jump]に差し替える。
+;   （エンディングの「タイトルへ戻る」は元々[jump storage="title.ks"]なので影響なし）
+;================================================================================
+[iscript]
+if (typeof TYRANO !== 'undefined' && TYRANO.kag) {
+  TYRANO.kag.backTitle = function () {
+    $.confirm($.lang('go_title'), function () {
+      TYRANO.kag.ftag.startTag('jump', { storage: 'title.ks', target: '' });
+    });
+  };
+}
+[endscript]
+
 ;ゲームで必ず必要な初期化処理はこのファイルに記述するのがオススメ
 
 ;環境光プラグイン（tsp-ambient-light）を読み込み
@@ -37,6 +54,12 @@
 [hidemenubutton]
 
 ;================================================================================
+; 免責事項（起動時）— 起動ロゴより前に表示し、同意するまで進めない
+;   見た目・文言は disclaimer.ks / ui_i18n.css / lang.ks を参照。
+;================================================================================
+@call storage="disclaimer.ks"
+
+;================================================================================
 ; 起動ロゴ（だおソフト）を縮小表示 → フェードイン→数秒保持→フェードアウト
 ;   見た目は ui_i18n.css の .boot-logo。サイズ調整は .boot-logo img の width。
 ;================================================================================
@@ -48,6 +71,9 @@ $('.tyrano_base').append(
 // 次フレームで表示クラス付与→CSSトランジションでフェードイン
 requestAnimationFrame(function(){ $('#boot_logo').addClass('is-show'); });
 [endscript]
+
+;ロゴ表示に合わせてブランドSEを一度だけ鳴らす（爆音＝最大音量）
+[playse storage="daosoft-top001.wav" volume="100"]
 
 ;表示を保持（フェードイン0.6s＋余韻）
 [wait time=2000]
