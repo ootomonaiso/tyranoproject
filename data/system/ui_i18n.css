@@ -1,0 +1,573 @@
+/* ============================================================================
+   多言語UI 共通スタイル（背景は共通画像、文字はHTML＋data-i18n）
+     - 背景は言語をまたいで1枚を使い回す（文字を焼き込まない）。
+     - 文字は .ui-* 要素に data-i18n で入れ、applyI18n() が流し込む。
+     - レイアウトはCSSに任せる → 英語など文字長が違っても座標破綻しない。
+   画面を増やすときは .ui-screen--xxx を足していく。
+   ============================================================================ */
+
+/* 画面全面に敷く共通コンテナ。ゲーム解像度(1280x720想定)に合わせる。
+   .tyrano_base の上に重ねる前提で position:absolute。 */
+.ui-screen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1280px;
+    height: 720px;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", "游ゴシック", YuGothic, sans-serif;
+    color: #ffe9c2;
+    /* Tyranoの[button]は free/fix レイヤ(z-index 999999〜99999999)に置かれる。
+       HTMLメニューはその上に載せないとクリックがレイヤに吸われて押せない。
+       →エンジンの最大値(約1億)より確実に上へ。 */
+    z-index: 100000000;
+    pointer-events: none;       /* 既定は透過。操作させたい要素だけ下で復活 */
+    user-select: none;
+
+    /* --- 配色トークン（上品な和風：淡金×墨紺）。ここを変えると全UIが揃う --- */
+    --ink-1:   #1c273f;   /* 墨紺（明） 面の上側 */
+    --ink-2:   #0b111f;   /* 墨紺（暗） 面の下側・地 */
+    --gold:    #c2a266;   /* 淡めの金（罫線）。オレンジみを抑える */
+    --gold-hi: #ecdcae;   /* 金の照り（縁・文字ハイライト） */
+    --gold-lo: #8a6c3a;   /* 金の陰 */
+    --ivory:   #f3ecdb;   /* 文字色（温かい生成り） */
+    --muted:   #a7b0c4;   /* 副次テキスト（数値・補助）淡い藍白 */
+}
+
+/* 装飾用の擬似要素は一切クリックを奪わない（＝ボタン押下バグの予防） */
+.ui-screen *::before,
+.ui-screen *::after {
+    pointer-events: none;
+}
+/* 操作可能パーツはクリックを受け取る */
+.ui-screen .ui-btn,
+.ui-screen .ui-control,
+.ui-screen [data-onclick] {
+    pointer-events: auto;
+}
+
+/* --- 共通背景：墨のグラデに極薄の青海波を敷く（画像不要・言語非依存） --------
+   紺〜黒の深い縦グラデ＋中央上の淡い月光＋ごく薄い波紋。周囲を落として奥行き。
+   波紋は主張させず「気配」程度に（前バージョンは濃すぎてダサかったので抑制）。 */
+.ui-screen--config {
+    background-color: #0e1524;
+    background-image:
+        /* 中央上からの淡い月光 */
+        radial-gradient(120% 80% at 50% -10%, rgba(120, 150, 210, 0.18), transparent 55%),
+        /* 縦の墨グラデ（上やや明→下は締める） */
+        linear-gradient(180deg, #16203a 0%, #101827 45%, #080d17 100%),
+        /* 青海波：ごく薄く、大きめの弧で上品に */
+        radial-gradient(circle at 100% 150%,
+            transparent 38%, rgba(150, 178, 224, 0.05) 38.5%, rgba(150, 178, 224, 0.05) 41%, transparent 41.5%),
+        radial-gradient(circle at 0 150%,
+            transparent 38%, rgba(150, 178, 224, 0.05) 38.5%, rgba(150, 178, 224, 0.05) 41%, transparent 41.5%);
+    background-size: 100% 100%, 100% 100%, 160px 80px, 160px 80px;
+    background-position: center, center, 0 0, 80px 40px;
+    box-shadow: inset 0 0 320px rgba(0, 0, 0, 0.7);   /* 強めのビネットで中央に視線 */
+}
+
+/* ===== 掛軸(かけじく)風パネル =========================================
+   ・天地に木の軸（両端が軸先のこぶ）  … .cfg-panel::before / ::after
+   ・金襴(きんらん)の表装             … border-image の斜め織り
+   ・藍染和紙の本紙（繊維のムラ入り）  … background
+   本紙の中に見出し・設定行を流し込む。 */
+.cfg-panel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    max-width: 90%;
+    padding: 44px 52px 50px;
+    /* 藍染和紙：紺のムラ＋縦横の細かな繊維 */
+    background:
+        radial-gradient(85% 55% at 50% 0%, rgba(74, 98, 148, 0.22), transparent 62%),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.014) 0 2px, transparent 2px 5px),
+        repeating-linear-gradient(0deg,  rgba(0, 0, 0, 0.05) 0 3px, transparent 3px 7px),
+        linear-gradient(180deg, #1b2740, #111a2e);
+    /* 金襴の表装：藍地に金糸を織り込んだ細かな斜め紋 */
+    border: 14px solid transparent;
+    border-image: repeating-linear-gradient(45deg,
+        #16233f 0, #16233f 3px,
+        #2c4067 3px, #2c4067 5px,
+        #ecdcae 5px, #ecdcae 6px,
+        #b89a58 6px, #b89a58 8px,
+        #2c4067 8px, #2c4067 10px) 14;
+    border-radius: 2px;
+    box-shadow:
+        0 32px 80px rgba(0, 0, 0, 0.7),
+        inset 0 0 0 1px rgba(236, 220, 174, 0.4),   /* 表装と本紙の境の金線 */
+        inset 0 0 70px rgba(0, 0, 0, 0.5);          /* 本紙中央にかけての陰 */
+}
+/* 天地の軸（木の棒）：本紙より左右に張り出し、両端が丸い軸先 */
+.cfg-panel::before,
+.cfg-panel::after {
+    content: "";
+    position: absolute;
+    left: -28px;
+    right: -28px;
+    height: 26px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.22), transparent 42%),
+        linear-gradient(90deg,
+            #241a11 0, #4a3826 5%, #5f4a32 11%, #3c2e1e 50%,
+            #5f4a32 89%, #4a3826 95%, #241a11 100%);
+    border-radius: 14px;
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.6),
+        inset 0 -3px 5px rgba(0, 0, 0, 0.5),
+        inset 0 2px 3px rgba(255, 255, 255, 0.12);
+}
+.cfg-panel::before { top: -38px; }
+.cfg-panel::after  { bottom: -38px; }
+
+/* 本紙中央の家紋透かし（丸に二引き＋青海波の気配）。余白に奥行きを与える */
+.cfg-mon {
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    opacity: 0.5;
+    pointer-events: none;
+    background:
+        /* 丸の輪郭 */
+        radial-gradient(circle, transparent 62%, rgba(236, 220, 174, 0.10) 62.5%, rgba(236, 220, 174, 0.10) 66%, transparent 66.5%),
+        /* 丸に二引（横二本線）の気配 */
+        linear-gradient(0deg, transparent 44%, rgba(236, 220, 174, 0.08) 44.5%, rgba(236, 220, 174, 0.08) 47%, transparent 47.5%,
+                              transparent 53%, rgba(236, 220, 174, 0.08) 53.5%, rgba(236, 220, 174, 0.08) 56%, transparent 56.5%);
+}
+
+/* 落款（らっかん）：右下の朱印。金成屋の「金」 */
+.cfg-seal {
+    position: absolute;
+    right: 26px;
+    bottom: 22px;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "游明朝", serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgba(245, 236, 219, 0.92);
+    background: linear-gradient(145deg, #b1352b, #8f241d);
+    border: 1px solid rgba(240, 180, 170, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 0 6px rgba(0, 0, 0, 0.35);
+    transform: rotate(-4deg);
+    opacity: 0.9;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* パネル見出し（設定 / Config）：明朝＋金属グラデ文字で上品に */
+.cfg-title {
+    position: relative;
+    margin: 0 0 28px;
+    padding-bottom: 18px;
+    font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "游明朝", serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.34em;
+    text-indent: 0.34em;            /* letter-spacingの右余りを中央寄せで相殺 */
+    text-align: center;
+    background: linear-gradient(180deg, var(--gold-hi), var(--gold) 55%, var(--gold-lo));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--gold-hi);          /* clip未対応時のフォールバック */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.55));
+    border-bottom: none;
+}
+/* 見出し下の金の飾り罫（中央に菱形を挟んだ二本線） */
+.cfg-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 1px;
+    background: linear-gradient(90deg,
+        transparent, rgba(204, 164, 99, 0.15) 15%,
+        var(--gold) 50%,
+        rgba(204, 164, 99, 0.15) 85%, transparent);
+}
+
+/* --- コンフィグ：ラベル行を縦に並べる（パネル内に流し込む） ------------------ */
+.cfg-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.cfg-row {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+}
+.cfg-row__label {
+    width: 240px;               /* ラベル列の幅。長い言語もここで吸収 */
+    flex: 0 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.65);
+}
+.cfg-row__control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* --- 汎用ボタン（戻る・言語切替など） ---------------------------------------
+   墨紺のグラスに金の細縁。ホバーで金がふんわり灯る（box-shadowの金グロー）。 */
+.ui-btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 24px;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: var(--ivory);
+    border: 1px solid rgba(194, 162, 102, 0.6);
+    border-radius: 4px;
+    background: linear-gradient(180deg, #202c46, #0e1526);
+    box-shadow:
+        inset 0 0 0 2px rgba(11, 17, 31, 0.85),    /* 縁のすぐ内の暗い溝 */
+        inset 0 0 0 3px rgba(194, 162, 102, 0.22), /* さらに内の金の細線＝二重縁 */
+        inset 0 1px 0 rgba(255, 255, 255, 0.06),
+        0 4px 12px rgba(0, 0, 0, 0.45);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    transition: color 0.18s ease, border-color 0.18s ease,
+                box-shadow 0.18s ease, background 0.18s ease, transform 0.18s ease;
+}
+.ui-btn:hover {
+    color: #fff6e2;
+    border-color: var(--gold-hi);
+    background: linear-gradient(180deg, #2c3c60, #141e34);
+    box-shadow:
+        inset 0 0 0 2px rgba(11, 17, 31, 0.7),
+        inset 0 0 0 3px rgba(236, 220, 174, 0.45),
+        0 0 20px rgba(194, 162, 102, 0.5),         /* 金のふんわりグロー */
+        0 6px 16px rgba(0, 0, 0, 0.55);
+    transform: translateY(-1px);
+}
+.ui-btn:active {
+    transform: translateY(0);
+    box-shadow:
+        inset 0 2px 6px rgba(0, 0, 0, 0.45),
+        0 0 12px rgba(204, 164, 99, 0.35);
+}
+.ui-btn.is-active {
+    color: #1c2338;                                 /* 金地に映える濃色文字 */
+    font-weight: bold;
+    border-color: var(--gold-hi);
+    background: linear-gradient(180deg, var(--gold-hi), var(--gold) 60%, var(--gold-lo));
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.35);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        0 0 16px rgba(204, 164, 99, 0.5),
+        0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+/* 画面右上に置く戻るボタン等 */
+.ui-topright {
+    position: absolute;
+    right: 40px;
+    top: 24px;
+    display: flex;
+    gap: 10px;
+}
+
+/* --- 共通「閉じる」ボタン（画像 menu_button_close.png の置き換え） -----------
+   CG/回想/実績の右上に置く円形の × ボタン。文字を持たないので言語非依存。
+   .ui-screen--overlay は背景透過・全面透過（ボタンだけクリックを受ける）。 */
+.ui-screen--overlay {
+    background: transparent;
+}
+.ui-btn--close {
+    position: absolute;
+    right: 40px;
+    top: 34px;
+    width: 54px;
+    height: 54px;
+    padding: 0;
+    font-size: 28px;
+    line-height: 1;
+    color: var(--gold-hi);                          /* 金の × */
+    border-radius: 50%;
+    border: 1px solid rgba(204, 164, 99, 0.7);
+    background: radial-gradient(120% 120% at 50% 30%, rgba(34, 46, 74, 0.92), rgba(11, 18, 34, 0.95));
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 6px 18px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+/* 内側の細い金の輪（装飾。pointer-eventsは全体ルールでnone） */
+.ui-btn--close::before {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    border: 1px solid rgba(204, 164, 99, 0.28);
+}
+.ui-btn--close:hover {
+    color: #fff6e2;
+    border-color: var(--gold-hi);
+    background: radial-gradient(120% 120% at 50% 30%, rgba(52, 70, 108, 0.95), rgba(18, 28, 50, 0.96));
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 0 20px rgba(204, 164, 99, 0.5),           /* 金のふんわりグロー */
+        0 6px 18px rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px) rotate(90deg);      /* ×がくるっと回る */
+}
+
+/* 操作パーツはクリックを受け取る（.ui-screen は既定 pointer-events:none のため） */
+.ui-screen input,
+.ui-screen .cfg-range,
+.ui-screen .cfg-toggle,
+.ui-screen .cfg-toggle .ui-btn {
+    pointer-events: auto;
+}
+
+/* --- 音量・速度スライダー --------------------------------------------------- */
+.cfg-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgba(198, 167, 110, 0.85), rgba(198, 167, 110, 0.30));
+    outline: none;
+    cursor: pointer;
+}
+.cfg-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #f2e3c0;
+    border: 1px solid #8a6d3b;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.cfg-val {
+    display: inline-block;
+    min-width: 4em;
+    margin-left: 14px;
+    font-size: 18px;
+    color: #f2e3c0;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+/* --- 2択トグル（ON/OFF・言語など） ----------------------------------------- */
+.cfg-toggle {
+    display: inline-flex;
+    gap: 8px;
+}
+.cfg-toggle .ui-btn {
+    padding: 6px 18px;
+    font-size: 18px;
+}
+
+/* コンフィグ画面は全面でクリックを受け止め、背後のタイトルボタン等へ透過させない */
+.ui-screen--config {
+    pointer-events: auto;
+}
+
+/* ============================================================================
+   タイトル画面メニュー（背景=Tyranoのtitle.pngはそのまま／ボタンだけHTML）
+   実際の動作は透明化したネイティブ[button]へprogrammatic clickで委譲する。
+   ============================================================================ */
+
+/* 透明化するネイティブ[button]（見た目はHTML側が担当） */
+.t_native {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* タイトル用オーバーレイ（背景は透過してキー絵を見せる） */
+.ui-screen--title {
+    background: transparent;
+}
+
+/* 下部中央のメニュー列 */
+.title-menu {
+    position: absolute;
+    left: 50%;
+    bottom: 42px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 14px;
+}
+/* メニューボタン＝漆塗りの木札風。金の二重縁＋金文字（明朝）で「おしゃれ」に。
+   上辺中央に金の菱形（釘隠し風）ワンポイント。ホバーで金が灯り浮き上がる。 */
+.title-btn {
+    position: relative;
+    min-width: 160px;
+    padding: 17px 22px 16px;
+    font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "游明朝", serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.16em;
+    text-indent: 0.16em;
+    color: var(--gold-hi);                          /* 金文字 */
+    border: 1px solid var(--gold);
+    border-radius: 3px;
+    background: linear-gradient(180deg, #1c2740 0%, #0c1220 100%);
+    box-shadow:
+        inset 0 0 0 3px rgba(9, 14, 26, 0.9),       /* 縁内の暗い溝 */
+        inset 0 0 0 4px rgba(194, 162, 102, 0.28),  /* 金の細線＝二重縁 */
+        inset 0 2px 1px rgba(255, 255, 255, 0.06),
+        0 10px 24px rgba(0, 0, 0, 0.55);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85), 0 0 10px rgba(194, 162, 102, 0.25);
+}
+/* 上辺中央の金の菱形（釘隠し／飾り鋲のイメージ） */
+.title-btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    transform: translateX(-50%) rotate(45deg);
+    background: linear-gradient(135deg, var(--gold-hi), var(--gold-lo));
+    border: 1px solid rgba(9, 14, 26, 0.6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+.title-btn:hover {
+    color: #fff8e6;
+    border-color: var(--gold-hi);
+    background: linear-gradient(180deg, #2a3a5c 0%, #131d33 100%);
+    box-shadow:
+        inset 0 0 0 3px rgba(9, 14, 26, 0.7),
+        inset 0 0 0 4px rgba(236, 220, 174, 0.5),
+        0 0 26px rgba(194, 162, 102, 0.55),         /* 金のふんわりグロー */
+        0 12px 28px rgba(0, 0, 0, 0.6);
+    transform: translateY(-3px);
+}
+
+/* 右上（実績＋言語切替） */
+.title-topright {
+    position: absolute;
+    right: 30px;
+    top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.title-lang .ui-btn {
+    padding: 6px 14px;
+    font-size: 16px;
+}
+
+/* ============================================================================
+   実績 解除トースト（window.uiAchToast がDOMを生成、見た目はここに集約）
+     - 画面右上からスライドインし、数秒で退場して自動除去。
+     - シナリオ進行はブロックしない（pointer-events:none で操作も奪わない）。
+     - 複数同時解除は top をJS側で 84px ずつずらして段積みにする。
+   ============================================================================ */
+.ach-toast {
+    position: fixed;
+    right: 24px;
+    top: 24px;                       /* JSが段目に応じて上書き */
+    z-index: 100002000;              /* .ui-screen(1億)より更に前面 */
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 260px;
+    max-width: 460px;
+    padding: 14px 22px 14px 16px;
+    background: linear-gradient(135deg, rgba(38, 28, 54, 0.96), rgba(20, 16, 34, 0.97));
+    border: 1px solid rgba(255, 204, 51, 0.85);
+    border-left: 5px solid #ffcc33;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+    color: #fff;
+    font-family: "Noto Sans JP", "游ゴシック", YuGothic, sans-serif;
+    pointer-events: none;            /* 通知は操作を奪わない */
+    user-select: none;
+    /* 初期状態：右外へ退避＋透明。is-show で定位置へ */
+    opacity: 0;
+    transform: translateX(120%);
+    transition: opacity 0.35s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ach-toast.is-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.ach-toast__icon {
+    flex: 0 0 auto;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    line-height: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 35%, rgba(255, 224, 138, 0.35), rgba(255, 204, 51, 0.12));
+    border: 1px solid rgba(255, 204, 51, 0.6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.ach-toast__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+.ach-toast__label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    color: #ffe08a;
+    text-transform: uppercase;
+}
+.ach-toast__name {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ============================================================================
+   起動ロゴ（だおソフト）スプラッシュ
+     first.ks が #boot_logo を生成→ is-show でフェードイン→数秒後にフェードアウト。
+     ロゴPNGは白背景なので画面も白で馴染ませる。
+   ============================================================================ */
+.boot-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    z-index: 100001000;              /* .ui-screen(1億)より前面。起動時の最前面 */
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;           /* 進行を邪魔しない（タイマーで自動退場） */
+    user-select: none;
+}
+.boot-logo.is-show {
+    opacity: 1;
+}
+/* ここの width が表示サイズ。小さくしたいなら % を下げる（画面幅1280基準） */
+.boot-logo img {
+    width: 44%;                     /* ≈563px。全画面より小さめに縮小表示 */
+    max-width: 620px;
+    height: auto;
+    -webkit-user-drag: none;
+    user-select: none;
+}

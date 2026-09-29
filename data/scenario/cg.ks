@@ -26,7 +26,10 @@
 [layopt layer=1 visible=true]
 
 [cm]
-[button graphic="config/menu_button_close.png" enterimg="config/menu_button_close2.png"  target="*backtitle" x=1150 y=40 ]
+;閉じるボタン（CSS版・多言語対応。ページ再入場のたび1つだけ再生成される）
+[iscript]
+window.uiInjectClose('*backtitle');
+[endscript]
 
 [iscript]
     tf.tmp_index = 0;
@@ -60,6 +63,9 @@
 
 *backtitle
 [cm]
+[iscript]
+window.uiRemoveClose();
+[endscript]
 [freeimage layer=1]
 @jump storage=title.ks
 
@@ -74,6 +80,11 @@
 
 *clickcg
 [cm]
+
+;CGフルスクリーン表示中は閉じるボタンを隠す（元は[cm]でfixボタンが消えていた挙動に合わせる）
+[iscript]
+window.uiRemoveClose();
+[endscript]
 
 [layopt layer=1 visible=false]
 

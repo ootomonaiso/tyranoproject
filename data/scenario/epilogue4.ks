@@ -378,7 +378,7 @@
 ;演出案：頭の屋敷の板張り広間・囲炉裏、章の締め（囲炉裏_夜）
 [chara_hide_all time=300]
 [bg storage="囲炉裏_夜.png" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
+[ambient_light color="rgb(110,80,60)" time=600]
 案内された頭の屋敷は、里の中でも一段高い場所に建っていた。板張りの広間に通されると、囲炉裏の煙がゆるく天井へ抜けていく。[p]
 壁には使い込まれた得物がいくつも掛けられていて、どれも柄の部分だけが妙につやめいていた。長年の手入れの跡だと、見ただけで分かった。[p]
 [tsubasa_r face="normal"]

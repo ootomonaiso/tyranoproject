@@ -141,6 +141,8 @@
 *day3_tanuki
 [cm]
 [chara_hide_all time=300]
+;タヌキの誘いに乗ろうとした隠し実績
+[ach id="tanuki_friend"]
 朱雀「……いや、かき入れ時だぞ。今日はだめだ」[p]
 @jump target="*day3_choice_return"
 
@@ -151,6 +153,7 @@
 
 *day3_koyuki
 [eval exp="f.day3 = '小雪'"]
+[ach id="day3_koyuki"]
 [cm]
 [chara_hide_all time=300]
 ;演出案：終日ずっと店先での接客（母屋_4／昼〜夕）
@@ -314,7 +317,7 @@
 [chara_hide_all time=300]
 ;演出案：慎ましい夕餉・囲炉裏の間（囲炉裏_夜／夜）
 [bg storage="囲炉裏_夜.png" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
+[ambient_light color="rgb(110,80,60)" time=600]
 #
 その晩の膳は、いつにも増して慎ましかった。[p]
 麦飯は、いつもより少なめ。菜っ葉の汁と、香の物が少し。それだけだ。[p]
@@ -368,7 +371,7 @@
 ;演出案：自室・夜の食料探しの起点（主人公寝床／深夜トーン）
 [chara_hide_all time=300]
 [bg storage="主人公寝床.png" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
+[ambient_light color="rgb(70,85,130)" time=600]
 夜半。どうにも寝つけなかった。腹が、減って。[p]
 天井を見ていても、浮かぶのは令和のコンビニの明るい棚ばかりだ。肉まん。からあげ。冷たい牛乳。……だめだ。何か腹に入れないと、眠れそうにない。[p]
 そっと布団を抜け出す。足元では、タヌキが「行くのか?」みたいな顔で、ついてきた。[p]
@@ -376,7 +379,7 @@
 #
 ;演出案：台所・真姫の待ち伏せオチ（未分類_7／深夜トーン）
 [bg storage="未分類_7.jpg" time=600 method="crossfade"]
-[ambient_light color="none" time=600]
+[ambient_light color="rgb(70,85,130)" time=600]
 抜き足、差し足。暗い廊下を、台所へ――[p]
 真姫「どーこ行くんですか? ご主人様」[p]
 朱雀「うぉっ!?」[p]
@@ -393,7 +396,7 @@
 ………[p]
 ;演出案：蔵の戸前・小雪の待ち伏せオチ（蔵_夜／深夜トーン）
 [bg storage="蔵_夜.png" time=600 method="crossfade"]
-[ambient_light color="none" time=600]
+[ambient_light color="rgb(70,85,130)" time=600]
 ならば、と方向を変える。蔵になら、干した何かがしまってあるはずだ。忍び足で、裏手へ――[p]
 [koyuki_in face="normal"]
 小雪「……旦那様。蔵に、何かご用ですか」[p]
@@ -422,7 +425,7 @@
 ;演出案：椿紗の部屋の前＝自室の隣・三段オチの締め（主人公寝床／深夜・襖側）
 [chara_hide_all time=300]
 [bg storage="主人公寝床.png" time=600 method="crossfade"]
-[ambient_light color="none" time=600]
+[ambient_light color="rgb(70,85,130)" time=600]
 そろり、と椿紗の部屋の襖に手をかける。拳ひとつ開いた、いつもの隙間へ――[p]
 [tsubasa_in face="normal"]
 椿紗「兄さん」[p]

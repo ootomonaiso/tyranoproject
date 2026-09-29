@@ -24,7 +24,10 @@
 
 *replaypage
 [cm]
-[button graphic="config/menu_button_close.png" enterimg="config/menu_button_close2.png"  target="*backtitle" x=1150 y=40 ]
+;閉じるボタン（CSS版・多言語対応。ページ再入場のたび1つだけ再生成される）
+[iscript]
+window.uiInjectClose('*backtitle');
+[endscript]
 
 [iscript]
 	tf.target_page = "page_"+tf.page;
@@ -51,6 +54,7 @@
 [freeimage layer=1]
 
 [iscript]
+window.uiRemoveClose();
 tf.system.flag_replay = false;
 [endscript]
 
@@ -69,6 +73,7 @@ tf.system.flag_replay = false;
 [cm]
 
 [iscript]
+    window.uiRemoveClose(); // 別storageの回想シーンへ抜けるのでオーバーレイを片付ける
     tf.system.flag_replay = true;
 [endscript]
 

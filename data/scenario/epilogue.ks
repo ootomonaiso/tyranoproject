@@ -241,6 +241,8 @@
 *epilogue_kame
 [cm]
 [chara_hide_all time=300]
+;「亀の甲羅のお告げ」と嘯いた隠し実績
+[ach id="reason_kame"]
 朱雀「亀の甲羅を火であぶって、割れた筋を読んだんです。見事に『織田』の字に見えましてね」[p]
 元締め「……はぁ?」[p]
 [maki_in face="normal"]
@@ -254,6 +256,8 @@
 *epilogue_tanuki_ongaeshi
 [cm]
 [chara_hide_all time=300]
+;「タヌキの恩返し」と嘯いた隠し実績
+[ach id="reason_tanuki"]
 朱雀「うちで飼ってるタヌキが、夜中に木の実を『織田』の札のほうへ並べましてね。虫の知らせってやつです」[p]
 元締め「……そりゃ賭場じゃなくて、見世物小屋の話だ」[p]
 [tsubasa_in face="normal"]
@@ -267,6 +271,8 @@
 *epilogue_kan
 [cm]
 [chara_hide_all time=300]
+;「勘」と言い切った隠し実績
+[ach id="reason_kan"]
 朱雀「勘です」[p]
 元締め「……勘?」[p]
 朱雀「五百倍の勘です」[p]
@@ -333,7 +339,7 @@
 ;演出案：店内土間・安堵と労い〜里への出立話（未分類_7／夕方前の光、終盤は橙〜茜へ）
 [chara_hide_all time=300]
 [bg storage="未分類_7.jpg" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
+[ambient_light color="rgb(150,95,70)" time=600]
 [tsubasa_r face="normal"]
 金成屋に戻り着くころには、四人とも肩で息をしていた。框に木箱を下ろすと、[quake time=350 hmax=7 vmax=6]どすんと重い音が土間に響いた。[p]
 座り込んだ椿紗が、框にもたれて大きく息をついた。[p]

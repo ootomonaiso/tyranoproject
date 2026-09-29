@@ -178,6 +178,8 @@
 *day5_tanuki
 [cm]
 [chara_hide_all time=300]
+;タヌキの誘いに乗ろうとした隠し実績
+[ach id="tanuki_friend"]
 朱雀「……いや、さすがに、それはなぁ」[p]
 @jump target="*day5_choice_return"
 
@@ -190,6 +192,7 @@
 
 *day5_koyuki
 [eval exp="f.day5 = '小雪'"]
+[ach id="day5_koyuki"]
 [cm]
 [chara_hide_all time=300]
 ;演出案：終日、小雪と二人で店番（母屋_4／真昼〜夕）
@@ -326,6 +329,7 @@
 
 *day5_maki
 [eval exp="f.day5 = '真姫'"]
+[ach id="day5_maki"]
 [cm]
 [chara_hide_all time=300]
 ;演出案準拠：真姫と町へ情報集め（魚市場_1）
@@ -340,6 +344,7 @@
 
 *day5_tsubasa
 [eval exp="f.day5 = '椿紗'"]
+[ach id="day5_tsubasa"]
 [cm]
 [chara_hide_all time=300]
 ;演出案準拠：椿紗と客引きに出る（母屋_4／店先）
@@ -357,7 +362,7 @@
 [chara_hide_all time=300]
 ;演出案：決戦前夜の夕餉・囲炉裏の間（囲炉裏_夜消／夜・火も落ちて）
 [bg storage="囲炉裏_夜消.png" time=1000 method="crossfade"]
-[ambient_light color="none" time=600]
+[ambient_light color="rgb(70,80,120)" time=600]
 #
 その晩の膳は、いつもより静かで、いつもより温かかった。湯気の立つ汁の匂いに、味噌の焦げるにおいが混じっている。飯椀を持つ手のひらに、ほかほかとした温もりが染みてきた。[p]
 昼間の午後を誰と過ごしたにせよ、夕方には、みんな同じ台所に集まってくる。今日ばかりは、それが当たり前のことじゃないような気がした。[p]
@@ -379,7 +384,7 @@
 ;演出案：屋敷の庭・月明かりと井戸端（共同井戸_1／夜・庭先）
 [chara_hide_all time=300]
 [bg storage="共同井戸_1.jpg" time=800 method="crossfade"]
-[ambient_light color="none" time=600]
+[ambient_light color="rgb(70,85,130)" time=600]
 片付けを終えた頃、俺はなんとなく、庭に出た。[p]
 夜風はまだ生ぬるく、板葺きの屋根の隙間から、今夜も月が覗いている。今夜の月は、いつもよりちょっとだけ、機嫌がよさそうに見えた。草の匂いと井戸端の水のにおいが、風に混じって流れてくる。どこかで虫がじじ、と一声鳴いて、また静かになった。[p]
 洗濯物の紐に、まだ取り込み忘れた布切れが、ひらひらと揺れている。[p]

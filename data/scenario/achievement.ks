@@ -31,17 +31,17 @@
 
     //一覧をHTMLで組み立てる（1つのptextにまとめて描画）
     var html = "";
-    html += "<div style='font-size:38px;color:#ffffff;font-weight:bold;margin-bottom:4px;'>実 績</div>";
-    html += "<div style='font-size:22px;color:#ffe08a;margin-bottom:18px;'>解除 " + tf.ach_got + " / " + tf.ach_total + "</div>";
+    html += "<div style='font-size:38px;color:#ffffff;font-weight:bold;margin-bottom:4px;'>" + window.L('ach_title') + "</div>";
+    html += "<div style='font-size:22px;color:#ffe08a;margin-bottom:18px;'>" + window.L('ach_unlocked') + " " + tf.ach_got + " / " + tf.ach_total + "</div>";
     html += "<div id='ach_scroll' style='max-height:540px;overflow-y:auto;overflow-x:hidden;padding-right:8px;pointer-events:auto;-webkit-overflow-scrolling:touch;'>";
 
     for(var i=0;i<tf.ach_defs.length;i++){
         var d    = tf.ach_defs[i];
         var open = sf.ach_view[d.id] ? true : false;
 
-        var star   = open ? "★" : "☆";
-        var name   = open ? d.name : "？？？";
-        var desc   = open ? d.desc : (d.secret ? "？？？" : d.desc);
+        var star   = open ? (d.icon || "★") : "☆";
+        var name   = open ? d.name : window.L('ach_locked');
+        var desc   = open ? d.desc : (d.secret ? window.L('ach_locked') : d.desc);
         var accent = open ? "#ffcc33" : "#555555";
         var tcol   = open ? "#ffffff" : "#888888";
         var dcol   = open ? "#dddddd" : "#777777";
@@ -78,16 +78,19 @@ window._ach_wheel = function(e){
 window.addEventListener('wheel', window._ach_wheel, { capture:true, passive:false });
 [endscript]
 
-;閉じるボタン（fixレイヤーなので [cm] で消える）
-[button graphic="config/menu_button_close.png" enterimg="config/menu_button_close2.png" target="*ach_backtitle" x=1150 y=40 ]
+;閉じるボタン（CSS版・多言語対応）
+[iscript]
+window.uiInjectClose('*ach_backtitle');
+[endscript]
 
 [s]
 
 *ach_backtitle
 [cm]
-;スクロール用のホイールリスナを解除
+;スクロール用のホイールリスナを解除＋閉じるボタンを除去
 [iscript]
 if (window._ach_wheel) { window.removeEventListener('wheel', window._ach_wheel, true); window._ach_wheel = null; }
+window.uiRemoveClose();
 [endscript]
 ;一覧のテキストとレイヤー1の画像を消してからタイトルへ戻る
 [free layer=1 name="ach_board"]
