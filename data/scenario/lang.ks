@@ -154,6 +154,12 @@ window.setLang = function (lang) {
 //   見た目は ui_i18n.css の .ui-btn--close（円形×ボタン・言語非依存）。
 //   ラベルは title 属性に common_close を入れておく（読み上げ・ホバー用）。
 window.uiInjectClose = function (backTarget) {
+  // ★注入時点の現在シナリオを記録して jump の storage に渡す。
+  //   target だけだと「現在シナリオの map_label」からしか backTarget を探せず、
+  //   状態がずれると「ラベルが見つかりません」→全走査でフリーズ（disc_done型）。
+  //   uiInjectClose は各ビュー(cg/replay/achievement)を開いた直後に呼ばれるため、
+  //   ここで拾う current_scenario が飛び先ラベルの在るファイルになる。
+  var backStorage = TYRANO.kag.stat.current_scenario;
   $('#ui_close').remove(); // 多重生成の防止（各画面で再入場しても1つだけ）
   var html =
     '<div id="ui_close" class="ui-screen ui-screen--overlay">' +
@@ -162,8 +168,10 @@ window.uiInjectClose = function (backTarget) {
   $('.tyrano_base').append(html);
   $('#ui_close .ui-btn--close').attr('title', window.L('common_close'));
   $('#ui_close .ui-btn--close').on('click', function () {
+    if ($('#ui_close').data('done')) return; // 二重発火防止
+    $('#ui_close').data('done', true);
     $('#ui_close').remove(); // オーバーレイを片付けてから遷移（残留防止）
-    TYRANO.kag.ftag.startTag('jump', { target: backTarget });
+    TYRANO.kag.ftag.startTag('jump', { storage: backStorage, target: backTarget });
   });
 };
 

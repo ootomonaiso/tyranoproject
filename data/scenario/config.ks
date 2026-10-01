@@ -167,8 +167,19 @@
 	refresh();
 
 	// --- スライダー ---
-	$('#cfgBgm').on('input', function () { tf.current_bgm_vol = parseInt(this.value); refresh(); });
-	$('#cfgSe').on('input',  function () { tf.current_se_vol  = parseInt(this.value); refresh(); });
+	//   ★BGM/SEはドラッグ中に即時反映する（next:"false"で音量だけ変更しシナリオは進めない）。
+	//     以前は *backtitle の [bgmopt] でしか適用されず「戻るまで変わらない＝つまみが死んでる」
+	//     ように感じたため、input で逐次 bgmopt/seopt を呼んでリアルタイムに反映する。
+	$('#cfgBgm').on('input', function () {
+	  tf.current_bgm_vol = parseInt(this.value);
+	  TYRANO.kag.ftag.startTag('bgmopt', { volume: String(tf.current_bgm_vol), next: 'false' });
+	  refresh();
+	});
+	$('#cfgSe').on('input',  function () {
+	  tf.current_se_vol  = parseInt(this.value);
+	  TYRANO.kag.ftag.startTag('seopt', { volume: String(tf.current_se_vol), next: 'false' });
+	  refresh();
+	});
 	$('#cfgCh').on('input',  function () { tf.current_ch_speed   = tf.ch_speeds[parseInt(this.value)];   refresh(); });
 	$('#cfgAuto').on('input',function () { tf.current_auto_speed = tf.auto_speeds[parseInt(this.value)]; refresh(); });
 
@@ -198,8 +209,14 @@
 	$('#cfgBack').on('click', function (e) {
 	  e.preventDefault();
 	  e.stopPropagation();
+	  // ★二重発火防止＋storage明示（disc_doneと同種のフリーズ対策）。
+	  //   連打や別コンテキストで再発火すると、target だけでは現在シナリオの
+	  //   map_label に *backtitle が無く「ラベルが見つかりません」→全走査でフリーズ。
+	  if ($('#config_screen').data('done')) return;
+	  $('#config_screen').data('done', true);
+	  $('#cfgBack').off('click');
 	  setTimeout(function () {
-	    TYRANO.kag.ftag.startTag('jump', { target: '*backtitle' });
+	    TYRANO.kag.ftag.startTag('jump', { storage: 'config.ks', target: '*backtitle' });
 	  }, 0);
 	});
 

@@ -73,6 +73,13 @@ $('#discLang .ui-btn').on('click', function (e) {
 $('#discYes').on('click', function (e) {
   e.preventDefault();
   e.stopPropagation();
+  // ★二重発火防止：一度同意したら以降のクリックを無効化する。
+  //   連打や、免責表示中に別シナリオへ進んでいる状態でこのハンドラが再発火すると、
+  //   下の[jump]が「現在シナリオに *disc_done が無い」状態で走り、
+  //   「ラベルが見つかりません」→全シナリオ走査でフリーズになる。
+  if ($('#disclaimer_screen').data('done')) return;
+  $('#disclaimer_screen').data('done', true);
+  $('#discYes, #discNo').off('click');
   try {
     // 信頼済みユーザー操作内なので、ここで呼べば無音再生による解除が有効。
     if (TYRANO.kag.tmp.ready_audio !== true && typeof TYRANO.kag.readyAudio === 'function') {
@@ -80,7 +87,10 @@ $('#discYes').on('click', function (e) {
     }
   } catch (err) {}
   setTimeout(function () {
-    TYRANO.kag.ftag.startTag('jump', { target: '*disc_done' });
+    // ★storage を明示：target だけだと「現在シナリオの map_label」からしか
+    //   *disc_done を探せず、現在シナリオが disclaimer.ks でない状況で
+    //   「ラベルが見つかりません」になる。storage 指定で必ず解決させる。
+    TYRANO.kag.ftag.startTag('jump', { storage: 'disclaimer.ks', target: '*disc_done' });
   }, 0);
 });
 
